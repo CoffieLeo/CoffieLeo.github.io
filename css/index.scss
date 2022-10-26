@@ -31,8 +31,11 @@ header{
         }
         .main-menu{
             @media screen and (max-width: 1440px) {
-                order: 2;
+                order: 3;
                 flex: none;
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 16px;
             }
             a{
                 display: block;
@@ -46,13 +49,14 @@ header{
                     color: #7c7c7c;
                     font-size: 12px;
                     transform: scale(.9);
+                    transition: all .5s;
                 }
             }
             justify-content: flex-start;
         } 
         .sub-menu{
             @media screen and (max-width: 1440px) {
-                order: 3;
+                order: 2;
             }
             justify-content: flex-end;
             li{
@@ -86,8 +90,6 @@ header{
             text-align: center;
             @media screen and (max-width: 1440px) {
                 flex: none;
-                width: 100%;
-                margin-bottom: 16px;
             }
             img{
                 width: 300px;
@@ -218,6 +220,7 @@ header{
     .product-img-box{
         display: flex;
         justify-content: center;
+        margin-top: 10px;
         .product-item{
             flex: none;
             width: 100px;
