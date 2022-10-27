@@ -18,8 +18,18 @@ window.onclick = function(event) {
 }
 
 // banner swiper
-const swiper = new Swiper('.swiper', {
+const bannerSwiper = new Swiper('.swiper', {
     loop: true,
+});
+
+// meet swiper
+const meetSwiper = new Swiper('.meet-swiper', {
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    effect: "fade",
 });
 
 // accordion

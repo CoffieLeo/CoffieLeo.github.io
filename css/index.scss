@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+body{}
+
+section{
+    >div{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &.bg-gray{
+        background-color: #FBFBFB;
+    }
+}
+
 ::placeholder {
     color: black;
     opacity: 1;
@@ -46,6 +59,14 @@
         &.btn-black{
             display: none;
         }
+    }
+}
+
+.swiper-slide{
+    img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
@@ -149,7 +170,8 @@ header{
                         text-decoration: none;
                         display: block;
                         &:hover {
-                            background-color: #ddd;
+                            background-color: black;
+                            color: white;
                         }
                     }
                     &.show {
@@ -266,13 +288,6 @@ header{
 
 .banner-slider{
     text-align: center;
-    .swiper-slide{
-        img{
-            width:100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
     p{
         position: relative;
         font-size: 36px;
@@ -605,29 +620,21 @@ header{
         @media screen and (max-width: 767px) {
             width: 100%;
         }
-        &:first-child{
-            background: url('../img/meet-bg-1.jpeg') center center no-repeat;
-            background-size: cover;
-            .item-info{
-                p{
-                    &:nth-child(1){
-                        text-transform: uppercase;
-                        font-size: 13px;
-                    }
-                    &:nth-child(2){
-                        font-size: 30px;
-                        font-weight: 500;
-                        margin: 8px 0;
-                    }
-                    &:nth-child(3){
-                        font-size: 14px;
-                    }
+        .item-info{
+            p{
+                &:nth-child(1){
+                    text-transform: uppercase;
+                    font-size: 13px;
+                }
+                &:nth-child(2){
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin: 8px 0;
+                }
+                &:nth-child(3){
+                    font-size: 14px;
                 }
             }
-        }
-        &:last-child{
-            background: url('../img/meet-bg-2.jpeg') center center no-repeat;
-            background-size: cover;
         }
         &:before{
             content: '';
@@ -675,6 +682,14 @@ header{
                     }
                 }
             }
+        }
+        .meet-swiper{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
         }
     }
 }
@@ -773,7 +788,7 @@ header{
         }
 
         p{
-            font-size: 15px !important;
+            font-size: 13px !important;
             font-weight: normal !important;
             @media screen and (max-width: 767px) {
                 justify-content: center;
@@ -880,14 +895,13 @@ header{
 }
 
 footer{
-    display: flex;
-    padding: 30px 16px;
     background-color: #1E1E1E;
     color: white;
     .footer-box{
         display: flex;
         width: 100%;
         max-width: 1200px;
+        padding: 30px 16px;
         margin: 0 auto;
         @media screen and (max-width: 767px) {
             flex-direction: column;
@@ -1001,6 +1015,57 @@ footer{
                 border-top: 1px #3C3E3E solid;
                 &:last-child{
                     border-bottom: 1px #3C3E3E solid;
+                }
+            }
+        }
+    }
+    .copyright-box{
+        background-color: black;
+        padding: 8px 16px;
+        font-size: 12px;
+        @media screen and (max-width: 767px) {
+            padding: 16px;
+        }
+        .copyright-item{
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            @media screen and (max-width: 767px) {
+                flex-direction: column;
+            }
+            ul{
+                overflow: hidden;
+                @media screen and (max-width: 767px) {
+                    margin-top: 8px;
+                }
+                li{
+                    float: left;
+                    margin-left: 24px;
+                    position: relative;
+                    &:first-child{
+                        @media screen and (max-width: 767px) {
+                            margin-left: 0;
+                            &::before{
+                                display: none;
+                            }
+                        }
+                    }
+                    &:before{
+                        content: '';
+                        display: block;
+                        width: 1px;
+                        height: 10px;
+                        background-color: white;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -12px;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
                 }
             }
         }
