@@ -542,6 +542,9 @@ header{
                     margin: 0;
                     line-height: 1;
                     font-weight: normal;
+                    @media screen and (max-width: 767px) {
+                        text-align: center;
+                    }
                     &:nth-child(1){
                         font-size: 12px;;
                     }
@@ -556,6 +559,12 @@ header{
                         line-height: 1.6;
                         margin-top: 16px;
                         font-size: 14px;
+                    }
+                    span{
+                        display: block;
+                        @media screen and (max-width: 767px) {
+                            display: inline-block;
+                        }
                     }
                 }
             }
@@ -671,10 +680,14 @@ header{
 }
 
 .analyze-box{
-    display: flex;
     position: relative;
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
+    .analyze-list{
+        display: flex;
+        width: 100%;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            flex-direction: column;
+        }
     }
     .analyze-item{
         display: flex;
@@ -684,6 +697,7 @@ header{
             padding: 50px 16px;
             
         }
+        .title-p{}
         &:first-child{
             flex: 1;
             text-align: center;

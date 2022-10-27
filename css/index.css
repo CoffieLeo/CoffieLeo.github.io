@@ -814,6 +814,12 @@ header .main-menu-mobile small {
   font-weight: normal;
 }
 
+@media screen and (max-width: 767px) {
+  .r9-box .r9-item.gradient-item .r9-desc p {
+    text-align: center;
+  }
+}
+
 .r9-box .r9-item.gradient-item .r9-desc p:nth-child(1) {
   font-size: 12px;
 }
@@ -831,6 +837,16 @@ header .main-menu-mobile small {
   line-height: 1.6;
   margin-top: 16px;
   font-size: 14px;
+}
+
+.r9-box .r9-item.gradient-item .r9-desc p span {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .r9-box .r9-item.gradient-item .r9-desc p span {
+    display: inline-block;
+  }
 }
 
 .r9-box .r9-item p {
@@ -977,14 +993,19 @@ header .main-menu-mobile small {
 }
 
 .analyze-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
 }
 
+.analyze-box .analyze-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
-  .analyze-box {
+  .analyze-box .analyze-list {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
