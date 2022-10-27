@@ -80,23 +80,28 @@ header{
     }
     nav{
         display: flex;
-        justify-content: center;
         align-items: center;
-        padding: 20px 16px;
-        flex-wrap: wrap;
-        .main-menu, .sub-menu{
-            flex: 2;
+        justify-content: space-between;
+        padding: 16px;
+        .main-menu-box{
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .main-menu, .sub-menu{
+            // flex: 2;
+            // display: flex;
+            // align-items: center;
         }
         .main-menu{
-            @media screen and (max-width: 1440px) {
-                order: 3;
-                flex: none;
-                width: 100%;
-                justify-content: space-around;
-                margin-top: 16px;
-            }
+            display: flex;
+            // @media screen and (max-width: 1440px) {
+            //     // order: 3;
+            //     flex: none;
+            //     width: 100%;
+            //     justify-content: space-around;
+            //     margin-top: 16px;
+            // }
             @media screen and (max-width: 767px) {
                 display: none;
             }
@@ -115,13 +120,14 @@ header{
                     transition: all .5s;
                 }
             }
-            justify-content: flex-start;
         } 
         .sub-menu{
-            @media screen and (max-width: 1440px) {
-                order: 2;
-            }
+            display: flex;
             justify-content: flex-end;
+            align-items: center;
+            @media screen and (max-width: 1440px) {
+                // order: 2;
+            }
             li{
                 display: flex;
                 align-items: center;
@@ -191,7 +197,8 @@ header{
             }
         }
         .logo{
-            flex: 1;
+            // flex: 1;
+            line-height: 1;
             text-align: center;
             @media screen and (max-width: 1440px) {
                 flex: none;
