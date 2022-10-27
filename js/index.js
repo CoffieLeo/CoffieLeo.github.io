@@ -55,11 +55,9 @@ for (i = 0; i < acc.length; i++) {
 
 // sidebar
 function openNav() {
-    document.getElementById("pal-sidebar").style.width = "250px";
-    // document.getElementById("main").style.marginLeft = "250px";
+    document.getElementsByClassName('sidebar').classList.add('active')
 }
   
 function closeNav() {
-    document.getElementById("pal-sidebar").style.width = "0";
-    // document.getElementById("main").style.marginLeft= "0";
+    document.getElementsByClassName('sidebar').classList.remove('active')
 }

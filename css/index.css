@@ -330,16 +330,20 @@ header .sidebar-menu .openbtn img {
 
 header .sidebar {
   height: 100%;
-  width: 0;
+  width: 250px;
   position: fixed;
   z-index: 100;
   top: 0;
-  right: 0;
+  right: -250px;
   background-color: #1E1E1E;
   overflow-x: hidden;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   padding-top: 60px;
+}
+
+header .sidebar.active {
+  right: 0px;
 }
 
 header .sidebar a {
