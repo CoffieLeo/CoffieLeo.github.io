@@ -375,7 +375,7 @@ header{
         color: white;
         padding: 16px;
         font-size: 35px;
-        font-weight: 700;
+        font-weight: 600;
         @media screen and (max-width: 767px) {
             font-size: 28px;
         }
@@ -394,6 +394,7 @@ header{
         border-radius: 2px;
         padding: 50px;
         @media screen and (max-width: 767px) {
+            text-align: center;
             padding: 16px;
         }
     }
@@ -406,10 +407,16 @@ header{
     }
     .title{
         font-size: 30px;
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+        }
     }
     .sub-title{
         font-size: 25px;
         line-height: 1;
+        @media screen and (max-width: 767px) {
+            font-size: 20px;
+        }
         span{
             display: inline-block;
             border-bottom: 2px #1E1E1E solid;
@@ -423,32 +430,43 @@ header{
         display: flex;
         justify-content: center;
         margin-top: 10px;
+        padding: 16px;
         @media screen and (max-width: 767px) {
             margin-top: 25px;
+            padding: 0;
         }
         .product-item{
             flex: none;
-            width: 100px;
-            margin: 0 10px;
+            width: 16%;
+            margin: 0 5px;
             text-align: center;
             color: #1E1E1E;
             text-decoration: none;
             transition: all .5s;
+            &:hover{
+                margin-top: -10px;
+            }
             @media screen and (max-width: 767px) {
-                flex: 1;
-                margin: 0;
                 &:nth-child(1), &:nth-child(5){
-                    transform: translateY(-16px);
+                    img{
+                        transform: translateY(-10px);
+                    }
                 }
                 &:nth-child(2), &:nth-child(4){
-                    transform: translateY(-8px);
+                    img{
+                        transform: translateY(-5px);
+                    }
                 }
             }
             img{
-                width: 100%;
+                width: 100%; 
             }
-            &:hover{
-                margin-top: -10px;
+            p{
+                font-size: 12px;
+            }
+            @media screen and (max-width: 767px) {
+                width: 20%;
+                margin: 0px;
             }
         }
     }
