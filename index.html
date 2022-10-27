@@ -53,24 +53,74 @@
             </a>
             <ul class="sub-menu">
                 <li class="search-box">
-                    <img class="search" src="/img/icon-search.png" alt="">
+                    <ion-icon name="search"></ion-icon>
                     <input type="text" placeholder="SEARCH">
                 </li>
                 <li class="choice-lang">
-                    TW<img class="arrow" src="/img/icon-arrow.png" alt="">
+                    <div class="dropdown">
+                        <button onclick="choiceLang()" class="dropbtn">
+                            TW<ion-icon name="chevron-down"></ion-icon>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">EN</a>
+                        </div>
+                      </div>
                 </li>
                 <li>
-                    <a href="">
-                        <img class="member" src="/img/icon-member.png" alt="">
+                    <a href="javascript:;">
+                        <ion-icon name="person-outline"></ion-icon>
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <img class="cart" src="/img/icon-cart.png" alt="">
+                    <a href="javascript:;">
+                        <ion-icon name="cart-outline"></ion-icon>
                     </a>
+                </li>
+                <li class="sidebar-menu">
+                    <div id="main">
+                        <button class="openbtn" onclick="openNav()">
+                            <img src="/img/mobile-menu.png" alt="">
+                        </button>  
+                    </div>
                 </li>
             </ul>
         </nav>
+        <!-- sidebar -->
+        <div id="pal-sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <ul class="main-menu-mobile">
+                <li>
+                    <a href="javascript:;">
+                        <small>NEW MEMBER GUIDE</small>
+                        新夥伴指南
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <small>PRODUCT</small>
+                        商品系列
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <small>SKIN BEAUTY BLOG</small>
+                        美好肌膚部落格
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <small>MEMBERSHIP</small>
+                        會員回饋
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <small>ABOUT US</small>
+                        關於我們
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <!-- banner -->
@@ -185,7 +235,7 @@
                 <p>以三重黃金修復成分，雙面向修復物理性及平衡微生態屏障<br>，有效舒敏、減緩老化、痘痘等肌膚問題</p>
             </div>
             <div class="more-btn">
-                <a href="">
+                <a href="javascript:;">
                     了解更多
                     <img src="/img/icon-arrow-right.png" alt="">
                     <img class="btn-black" src="/img/icon-arrow-right-w.png" alt="">
@@ -216,7 +266,7 @@
                     </li>
                 </ul>
                 <div class="more-btn">
-                    <a href="">
+                    <a href="javascript:;">
                         了解更多
                         <img src="/img/icon-arrow-right.png" alt="">
                         <img class="btn-black" src="/img/icon-arrow-right-w.png" alt="">
@@ -270,11 +320,23 @@
                     <p>待補</p>
                 </div>
                 <div class="more-btn">
-                    <a href="">
+                    <a href="javascript:;">
                         了解更多
                         <img src="/img/icon-arrow-right.png" alt="">
                         <img class="btn-black" src="/img/icon-arrow-right-w.png" alt="">
                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="store-phone-box">
+            <p>YOUR SKIN BEAUTY PAL 你的隨身AI智慧護膚夥伴 與皮膚科醫師共同研發</p>
+            <div class="store-img-box">
+                <div class="store-img">
+                    <img class="qrcode" src="/img/QRCODE.png" alt="">
+                </div>
+                <div class="store-img">
+                    <img class="apple" src="/img/store-badges-2.png" alt="">
+                    <img class="android" src="/img/store-badges-1.png" alt="">
                 </div>
             </div>
         </div>
@@ -312,7 +374,143 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-box">
+            <a href="javascript:;" class="footer-logo">
+                <img src="/img/logo-white.png" alt="">
+            </a>
+            <div class="footer-menu-box">
+                <div class="footer-about">
+                    <p>聯絡我們</p>
+                    <ul>
+                        <li><dt>服務專線</dt> <dd>+886 2-6604-0090</dd></li>
+                        <li><dt>聯絡信箱</dt> <dd><a href="mailto:proactivelab@digidoctor.cc">proactivelab@digidoctor.cc</a></dd></li>
+                        <li><dt>服務時間</dt> <dd>週一至週五 10:00-17:00 (國定假期除外)</dd></li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <div class="menu-item">
+                        <p>關於我們</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">品牌故事</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">科技護膚主張</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">活性配方LAB</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>購物須知</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">付款方式</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">出貨與配送說明</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">發票說明</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">退貨流程</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">訂單相關</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-item disabled">
+                        <p>會員回饋</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">新夥伴優惠</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">免費試用</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">消費點數回饋</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">生日禮</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">夥伴日</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">心得分享回饋</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-item">
+                        <p>常見問答</p>
+                        <ul>
+                            <li>
+                                <a href="javascript:;">產品使用相關</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">訂購相關問題</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">會員計畫相關</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-menu-mobile">
+                    <div class="menu-item-mobile">
+                        <button class="footer-accordion">關於我們</button>
+                        <div class="footer-panel">
+                            <a href="javascript:;">- 品牌故事</a>
+                            <a href="javascript:;">- 科技護膚主張</a>
+                            <a href="javascript:;">- 活性配方LAB</a>
+                        </div>
+                    </div>
+                    <div class="menu-item-mobile">
+                        <button class="footer-accordion">購物須知</button>
+                        <div class="footer-panel">
+                            <a href="javascript:;">- 付款方式</a>
+                            <a href="javascript:;">- 出貨與配送說明</a>
+                            <a href="javascript:;">- 發票說明</a>
+                            <a href="javascript:;">- 退貨流程</a>
+                            <a href="javascript:;">- 訂單相關</a>
+                        </div>
+                    </div>
+                    <div class="menu-item-mobile">
+                        <button class="footer-accordion">會員回饋</button>
+                        <div class="footer-panel">
+                            <a href="javascript:;">- 新夥伴優惠</a>
+                            <a href="javascript:;">- 免費試用</a>
+                            <a href="javascript:;">- 消費點數回饋</a>
+                            <a href="javascript:;">- 生日禮</a>
+                            <a href="javascript:;">- 夥伴日</a>
+                            <a href="javascript:;">- 心得分享回饋</a>
+                        </div>
+                    </div>
+                    <div class="menu-item-mobile">
+                        <button class="footer-accordion">常見問答</button>
+                        <div class="footer-panel">
+                            <a href="javascript:;">- 產品使用相關</a>
+                            <a href="javascript:;">- 訂購相關問題</a>
+                            <a href="javascript:;">- 會員計畫相關</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="/js/index.js"></script>
 </body>
 </html>

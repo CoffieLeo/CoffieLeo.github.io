@@ -214,6 +214,54 @@ header nav .sub-menu .choice-lang {
   font-size: 13px;
 }
 
+header nav .sub-menu .choice-lang .dropbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header nav .sub-menu .choice-lang .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+header nav .sub-menu .choice-lang .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+header nav .sub-menu .choice-lang .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+header nav .sub-menu .choice-lang .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+header nav .sub-menu .choice-lang .dropdown-content.show {
+  display: block;
+}
+
+header nav .sub-menu a {
+  color: #1E1E1E;
+}
+
 header nav .sub-menu img {
   margin: 0 3px;
   width: 16px;
@@ -258,6 +306,84 @@ header nav .logo img:last-child {
     display: block;
     width: 50px;
   }
+}
+
+header .sidebar-menu {
+  display: none !important;
+  margin-right: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  header .sidebar-menu {
+    display: block !important;
+  }
+}
+
+header .sidebar-menu .openbtn {
+  background: transparent;
+  border: none;
+}
+
+header .sidebar-menu .openbtn img {
+  width: 30px;
+}
+
+header .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  background-color: #1E1E1E;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding-top: 60px;
+}
+
+header .sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: block;
+}
+
+header .sidebar a:hover {
+  color: #f1f1f1;
+}
+
+header .sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+header .openbtn {
+  cursor: pointer;
+}
+
+header #main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  header .sidebar {
+    padding-top: 15px;
+  }
+  header .sidebar a {
+    font-size: 18px;
+  }
+}
+
+header .main-menu-mobile small {
+  display: block;
+  font-size: 12px;
+  opacity: .7;
 }
 
 .banner-slider {
@@ -850,6 +976,7 @@ header nav .logo img:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -1015,13 +1142,63 @@ header nav .logo img:last-child {
   margin-top: 25px;
 }
 
+.analyze-box .store-phone-box {
+  width: 100%;
+  max-width: 290px;
+  padding: 20px;
+  background-color: #592A80;
+  color: white;
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .analyze-box .store-phone-box {
+    position: static;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.analyze-box .store-phone-box .store-img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .analyze-box .store-phone-box .store-img-box {
+    width: 100%;
+    max-width: 210px;
+    margin: 12px auto 0;
+  }
+}
+
+.analyze-box .store-phone-box img {
+  width: 120px;
+}
+
+.analyze-box .store-phone-box .qrcode {
+  width: 80px;
+  margin-right: 12px;
+}
+
 .about-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 120px 16px;
   overflow: hidden;
-  background: url("../img/pal-line.png") center 16px no-repeat;
+  background: url("../img/pal-line.png") center 36px no-repeat;
   background-size: auto 28px;
 }
 
@@ -1055,8 +1232,8 @@ header nav .logo img:last-child {
 
 .about-box .about-item:nth-child(2) img {
   width: 80%;
-  -webkit-animation: rotate 60s infinite linear;
-          animation: rotate 60s infinite linear;
+  -webkit-animation: rotate 120s infinite linear;
+          animation: rotate 120s infinite linear;
 }
 
 .about-box .about-item .sub-title {
@@ -1072,7 +1249,7 @@ header nav .logo img:last-child {
 
 .about-box .about-item p {
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.6;
   color: #1E1E1E;
 }
@@ -1084,6 +1261,187 @@ header nav .logo img:last-child {
 
 .about-box .more-btn {
   margin-top: 16px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 16px;
+  background-color: #1E1E1E;
+  color: white;
+}
+
+footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .footer-logo {
+  display: block;
+  width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-logo {
+    margin-bottom: 24px;
+  }
+}
+
+footer .footer-logo img {
+  width: 100%;
+}
+
+footer .footer-menu-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-menu-box {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .footer-menu-box p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer .footer-menu-box ul {
+  margin-top: 12px;
+}
+
+footer .footer-menu-box ul li {
+  line-height: 2;
+}
+
+footer .footer-menu-box ul li:before, footer .footer-menu-box ul li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+footer .footer-menu-box ul dt {
+  width: 80px;
+  float: left;
+  padding-right: 16px;
+}
+
+footer .footer-menu-box ul dd {
+  overflow: hidden;
+  zoom: 1;
+}
+
+footer .footer-menu-box ul a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-menu {
+    display: none;
+  }
+}
+
+footer .footer-menu .menu-item {
+  margin-right: 36px;
+}
+
+footer .footer-menu .menu-item.disabled {
+  opacity: .4;
+  pointer-events: none;
+}
+
+footer .footer-menu-mobile {
+  width: 100%;
+  margin-top: 24px;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  footer .footer-menu-mobile {
+    display: block;
+  }
+}
+
+footer .footer-menu-mobile .footer-accordion {
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background: transparent;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding: 16px;
+  border-top: 1px #676767 solid;
+  cursor: pointer;
+}
+
+footer .footer-menu-mobile .footer-accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+footer .footer-menu-mobile .active:after {
+  content: "\2212";
+}
+
+footer .footer-menu-mobile .footer-panel {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+footer .footer-menu-mobile .footer-panel a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  border-top: 1px #3C3E3E solid;
+}
+
+footer .footer-menu-mobile .footer-panel a:last-child {
+  border-bottom: 1px #3C3E3E solid;
 }
 
 @-webkit-keyframes rotate {
