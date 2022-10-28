@@ -37,13 +37,17 @@ const proSwiperMobile = new Swiper(".pro-swiper-mobile", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    on: {
-        slideChangeTransitionEnd: function () {
-            if(this.activeIndex === 1) {
-                document.querySelector('.swiper-box').classList.add('aaa');
-            }
-        },
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    // },
+    // on: {
+    //     slideChangeTransitionEnd: function () {
+    //         if(this.activeIndex === 1) {
+    //             document.querySelector('.swiper-box').classList.add('aaa');
+    //         }
+    //     },
+    // },
 });
 
 
