@@ -22,6 +22,31 @@ const bannerSwiper = new Swiper('.swiper', {
     loop: true,
 });
 
+// pro swiper
+const proSwiper = new Swiper(".pro-swiper", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+    },
+    loop: true,
+    // effect: "fade",
+});
+
+const proSwiperMobile = new Swiper(".pro-swiper-mobile", {
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    on: {
+        slideChangeTransitionEnd: function () {
+            if(this.activeIndex === 1) {
+                document.querySelector('.swiper-box').classList.add('aaa');
+            }
+        },
+    },
+});
+
+
 // meet swiper
 const meetSwiper = new Swiper('.meet-swiper', {
     loop: true,
