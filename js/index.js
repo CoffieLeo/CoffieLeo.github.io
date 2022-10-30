@@ -31,6 +31,12 @@ const proSwiper = new Swiper(".pro-swiper", {
     // effect: "fade",
 });
 
+const testSwiper = new Swiper('.swiper-test', {
+    navigation: {
+        nextEl: ".swiper-button-next",
+    },
+});
+
 const proSwiperMobile = new Swiper(".pro-swiper-mobile", {
     loop: true,
     pagination: {
