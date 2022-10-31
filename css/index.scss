@@ -486,6 +486,15 @@ header{
     }
 }
 
+.r9-info-box{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (max-width: 767px) {
+        padding: 0;
+    }
+}
 .r9-box{
     display: flex;
     position: relative;
@@ -910,13 +919,40 @@ header{
             }
         }
     }
+    .col-md-6{
+        &:first-child{
+            padding-right: 0;
+            @media screen and (max-width: 767px) {
+                padding: 0;
+            }
+        }
+        &:last-child{
+            padding-left: 0;
+            @media screen and (max-width: 767px) {
+                padding: 0;
+            }
+        }
+    }
 }
 
 .analyze-box{
     position: relative;
+    padding: 35px 0;
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0;
+    }
     .analyze-item{
+        @media screen and (max-width: 767px) {
+           text-align: center;
+        }
         img{
             width: 100%;
+            &.phone{
+                max-width: 200px;
+            }
+        }
+        p{
+            margin-bottom: 0;
         }
     }
     .title-p{
@@ -996,41 +1032,51 @@ header{
         }
     }
     .more-btn{
-        margin-top: 25px;
+        text-align: center;
+        margin: 25px auto;
     }
-    .store-phone-box{
-        width: 100%;
-        max-width: 290px;
-        padding: 20px;
-        background-color: #592A80;
-        color: white;
-        font-size: 13px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+}
+
+.store-phone-box{
+    width: 100%;
+    max-width: 290px;
+    padding: 20px;
+    background-color: #592A80;
+    color: white;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    &.for-mobile{
+        display: none;
         @media screen and (max-width: 767px) {
             position: static;
             max-width: 100%;
             text-align: center;
+            display: block;
         }
-        .store-img-box{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 12px;
-            @media screen and (max-width: 767px) {
-                width: 100%;
-                max-width: 210px;
-                margin: 12px auto 0;
-            }
+    }
+    .store-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 210px;
+            margin: 12px auto 0;
         }
-        img{
-            width: 120px;
-        }
-        .qrcode{
-            width: 80px;
-            margin-right: 12px;
-        }
+    }
+    img{
+        width: 120px;
+        margin: 3px 0;
+    }
+    .qrcode{
+        width: 80px;
+        margin-right: 12px;
     }
 }
 

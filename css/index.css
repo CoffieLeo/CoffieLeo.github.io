@@ -671,6 +671,19 @@ header .main-menu-mobile small {
   }
 }
 
+.r9-info-box {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .r9-info-box {
+    padding: 0;
+  }
+}
+
 .r9-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1260,12 +1273,53 @@ header .main-menu-mobile small {
   width: 100%;
 }
 
+.meet-skin-box .col-md-6:first-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .meet-skin-box .col-md-6:first-child {
+    padding: 0;
+  }
+}
+
+.meet-skin-box .col-md-6:last-child {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .meet-skin-box .col-md-6:last-child {
+    padding: 0;
+  }
+}
+
 .analyze-box {
   position: relative;
+  padding: 35px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .analyze-box {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .analyze-box .analyze-item {
+    text-align: center;
+  }
 }
 
 .analyze-box .analyze-item img {
   width: 100%;
+}
+
+.analyze-box .analyze-item img.phone {
+  max-width: 200px;
+}
+
+.analyze-box .analyze-item p {
+  margin-bottom: 0;
 }
 
 .analyze-box .title-p {
@@ -1375,10 +1429,11 @@ header .main-menu-mobile small {
 }
 
 .analyze-box .more-btn {
-  margin-top: 25px;
+  text-align: center;
+  margin: 25px auto;
 }
 
-.analyze-box .store-phone-box {
+.store-phone-box {
   width: 100%;
   max-width: 290px;
   padding: 20px;
@@ -1391,14 +1446,25 @@ header .main-menu-mobile small {
 }
 
 @media screen and (max-width: 767px) {
-  .analyze-box .store-phone-box {
-    position: static;
-    max-width: 100%;
-    text-align: center;
+  .store-phone-box {
+    display: none;
   }
 }
 
-.analyze-box .store-phone-box .store-img-box {
+.store-phone-box.for-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .store-phone-box.for-mobile {
+    position: static;
+    max-width: 100%;
+    text-align: center;
+    display: block;
+  }
+}
+
+.store-phone-box .store-img-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1412,18 +1478,19 @@ header .main-menu-mobile small {
 }
 
 @media screen and (max-width: 767px) {
-  .analyze-box .store-phone-box .store-img-box {
+  .store-phone-box .store-img-box {
     width: 100%;
     max-width: 210px;
     margin: 12px auto 0;
   }
 }
 
-.analyze-box .store-phone-box img {
+.store-phone-box img {
   width: 120px;
+  margin: 3px 0;
 }
 
-.analyze-box .store-phone-box .qrcode {
+.store-phone-box .qrcode {
   width: 80px;
   margin-right: 12px;
 }
