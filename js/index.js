@@ -78,12 +78,3 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
-
-// sidebar
-function openNav() {
-    document.querySelector('.sidebar').classList.add('active')
-}
-  
-function closeNav() {
-    document.querySelector('.sidebar').classList.remove('active')
-}

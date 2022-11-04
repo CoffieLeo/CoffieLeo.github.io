@@ -7,6 +7,7 @@
     <title>PAL 首頁</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/both.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -60,10 +61,11 @@
                     </div>
                     <div class="sub-menu-item choice-lang">
                         <div class="dropdown">
-                            <a class="" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <button class="lang-btn" onclick="chooseLang()">
                                 TW<img class="arrow" src="/img/icon-arrow.png" alt="">
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
+                            </button>
+                            <!-- add active to show -->
+                            <div id="langDropdown" class="dropdown-box lang-box">
                                 <a href="#">EN</a>
                             </div>
                         </div>
@@ -75,16 +77,125 @@
                     </div>
                     <div class="sub-menu-item shopping-cart">
                         <div class="dropdown">
-                            <a class="" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <button class="cart-btn" onclick="openCart()">
                                 <img src="/img/icon-cart.png" alt="">
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <div class="cart-info-box">
-                                    <div class="cart-product">aaa</div>
-                                    <div class="cart-product-num">bbb</div>
+                            </button>
+                            <!-- add active to show -->
+                            <div class="dropdown-box shopping-cart-box">
+                                <button class="close-btn" onclick="closeCart()">
+                                    <img src="/img/close-btn.svg" alt="">
+                                </button>
+                                <div class="cart-box">
+                                    <div class="cart-top">
+                                        <div class="cart-item">
+                                            <img src="/img/cart/cart-img-default-0.png" alt="">
+                                        </div>
+                                        <div class="cart-item">
+                                            <div class="cart-title">
+                                                <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                                            </div>
+                                            <div class="cart-price">NT$2160</div>
+                                            <div class="cart-sale">
+                                                <div class="cart-old-price">NT$2700</div>
+                                                <div class="cart-sale-num">20%OFF</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cart-bottom">
+                                        <div class="num-item num-ctrl">
+                                            <img src="/img/cart/cart-num-01.png" alt="">
+                                        </div>
+                                        <div class="num-item total-count">
+                                            <input id="total-count" type="text" value="1">
+                                        </div>
+                                        <div class="num-item num-ctrl">
+                                            <img src="/img/cart/cart-num-02.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="dropdown-divider"></div>
-                                <div class="cart-info-box">ccc</div>
+                                <div class="cart-box cart-custom">
+                                    <div class="custom-item">
+                                        <div class="custom-p">
+                                            <p class="main-p">自訂個人化護理程序，全方位決肌膚問題</p>
+                                            <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
+                                        </div>
+                                        <div class="cart-top">
+                                            <div class="cart-item">
+                                                <img src="/img/cart/cart-img-default-1.png" alt="">
+                                            </div>
+                                            <div class="cart-item">
+                                                <div class="cart-title">
+                                                    <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                    </div>
+                                                </div>
+                                                <div class="cart-price">NT$2160</div>
+                                                <div class="cart-sale">
+                                                    <div class="cart-old-price">NT$2700</div>
+                                                    <div class="cart-sale-num">20%OFF</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-bottom">
+                                            <div class="num-item num-ctrl">
+                                                <img src="/img/cart/cart-num-01.png" alt="">
+                                            </div>
+                                            <div class="num-item">
+                                                <input type="text" value="1">
+                                            </div>
+                                            <div class="num-item num-ctrl">
+                                                <img src="/img/cart/cart-num-02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="cart-info">
+                                            <img src="/img/cart/cart-info.svg" alt="">
+                                            此商品數量不得超過20ml主商品數量
+                                        </div>
+                                    </div>
+                                    <div class="custom-item">
+                                        <div class="custom-p">
+                                            <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
+                                        </div>
+                                        <div class="cart-top">
+                                            <div class="cart-item">
+                                                <img src="/img/cart/cart-img-default-2.png" alt="">
+                                            </div>
+                                            <div class="cart-item">
+                                                <div class="cart-title">
+                                                    <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                    </div>
+                                                </div>
+                                                <div class="cart-price">NT$2160</div>
+                                                <div class="cart-sale">
+                                                    <div class="cart-old-price">NT$2700</div>
+                                                    <div class="cart-sale-num">20%OFF</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-bottom">
+                                            <div class="num-item num-ctrl">
+                                                <img src="/img/cart/cart-num-01.png" alt="">
+                                            </div>
+                                            <div class="num-item">
+                                                <input type="text" value="1">
+                                            </div>
+                                            <div class="num-item num-ctrl">
+                                                <img src="/img/cart/cart-num-02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="cart-info">
+                                            <img src="/img/cart/cart-info.svg" alt="">
+                                            此商品數量不得超過20ml主商品數量
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="cart-footer">
+                                    <button class="white-btn">立即購買</button>
+                                    <button class="black-btn">加入購物車<img src="/img/icon-arrow-right-w.png" alt=""></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -150,7 +261,7 @@
                     <img src="/img/slider.jpeg" alt="">
                 </div>
             </div>
-            <p>創新科技護膚 1st<sup>*</sup>個人化保養品牌</p>
+            <p>創新科技護膚 1<sup>st*</sup>個人化保養品牌</p>
             <div class="mouse-btn">
                 <div class="mouse"></div>
             </div>
@@ -171,8 +282,8 @@
     <!-- show logo -->
     <div class="show-logo">
         <div class="img-box">
-            <img src="/img/logo-outline-a.png" alt="">
-            <img src="/img/logo-outline-b.png" alt="">
+            <img src="/img/PAL_slogan.svg" alt="">
+            <!-- <img src="/img/PAL_slogan-mobile.svg" alt=""> -->
         </div>
         <p>PERSONALIZATION IS BEAUTY <span>適合我的，才美</span></p>
     </div>
@@ -180,8 +291,8 @@
     <!-- product -->
     <div class="product-box">
         <div class="product-info">
-            <small>Personalized Skin Care</small>
-            <div class="title">
+            <small class="small-title">Personalized Skin Care</small>
+            <div class="main-title">
                 自訂個人化護理程序
             </div>
             <div class="sub-title">
@@ -354,8 +465,8 @@
                 <div class="col-md-6">
                     <div class="skin-item">
                         <div class="item-info">
-                            <p>Meet skin needs</p>
-                            <p>適膚好配方</p>
+                            <small class="small-title">Meet skin needs</small>
+                            <div class="main-title">適膚好配方</div>
                             <p>秉持修復、改善護膚哲學，與皮膚科醫師及資深配方師歷時3年，<br>研製 <span class="under-line">「適合肌膚需求」</span>的好配方</p>
                         </div>
                         <div class="meet-swiper">
@@ -419,8 +530,8 @@
                 </div>
                 <div class="col-md-8 p-4">
                     <div class="analyze-item">
-                        <p>Personalized Experience</p>
-                        <p class="title-p">創新科技護膚<br>個人化的全方位肌膚解決方案</p>
+                        <small class="small-title">Personalized Experience</small>
+                        <div class="main-title">創新科技護膚<br>個人化的全方位肌膚解決方案</div>
                         <div class="accordion-box">
                             <div class="accordion" id="accordion">
                                 <div class="card">
@@ -479,7 +590,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="more-btn">
+                        <div class="more-btn black-btn">
                             <a href="javascript:;">
                                 了解更多
                                 <img src="/img/icon-arrow-right.png" alt="">
@@ -520,8 +631,8 @@
 
     <div class="about-box">
         <div class="about-item">
-            <div class="sub-title">About Us</div>
-            <div class="title-box">我們</div>
+            <small class="small-title">About Us</small>
+            <div class="main-title">我們</div>
             <p>我們是一群由科技、美妝、生技業、皮膚科醫師所組成的新創團隊</p>
             <p class="sub-p">以AI技術帶來科技護膚的創新概念，並提供個人化與全方位的精準護膚解方不斷精進與研製適合肌膚需求的保養品，實現美好肌膚，是PRO ACTIVE LAB的成立宗旨</p>
             <div class="more-btn">
@@ -536,8 +647,8 @@
             <img src="/img/about-img.png" alt="">
         </div>
         <div class="about-item">
-            <div class="sub-title">Sustainability</div>
-            <div class="title-box">永續</div>
+            <small class="small-title">Sustainability</small>
+            <div class="main-title">永續</div>
             <p>我們在乎你的肌膚健康，同時也在乎如何實踐對環境及社會的使命</p>
             <p class="sub-p">在PRO ACTIVE LAB從原料、製程到包裝，從細節落實綠行動，並承諾盡量使用環保材質同時我們以發揚台灣原生物種為出發，並優先以在地栽種植萃加入保養品</p>
             <div class="more-btn">

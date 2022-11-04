@@ -1,0 +1,146 @@
+:root {
+    --star-size: 12px;
+    --star-color: #eee;
+    --star-background: #fc0;
+}
+
+// banner
+.products-banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    .products-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-weight: 700;
+        color: white;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// product-list-box
+.product-list-box{
+    margin-top: 100px;
+    .products-menu{
+        .products-menu-item{
+            padding-right: 16px;
+            margin-bottom: 40px;
+            a{
+                flex: 1;
+                display: block;
+                color: #333333;
+                font-size: 15px;
+                text-decoration: none;
+                &.menu-title{
+                    font-size: 16px;
+                    font-weight: 500;
+                    border-bottom: 1px solid #7C7C7C;
+                    color: #1E1E1E;
+                }
+            }
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 18px;
+                    img{
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .product-item-info{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        .info-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            .info-sale{
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #1E1E1E;
+                color: white;
+                font-size: 12px;
+                font-weight: 600;
+                padding: 2px 8px;
+            }
+            img{
+                width: 100%;
+            }
+            &.info-title{
+                font-size: 16px;
+                font-weight: 500;
+                color: #333;
+                margin-top: 5px;
+                letter-spacing: 1px;
+            }
+            &.info-price{
+                .new-price{
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-right: 8px;
+                }
+                .old-price{
+                    font-size: 12px;
+                    font-weight: 500;
+                    text-decoration: line-through;
+                    color: #B4B4B4;
+                }
+            }
+            &.star-box{
+                margin: 8px 0;
+                font-size: 12px;
+                font-weight: 400;
+                .stars {
+                    --percent: calc(var(--rating) / 5 * 100%);
+                    display: inline-block;
+                    font-size: var(--star-size);
+                    font-family: Times; // make sure ★ appears correctly
+                    line-height: 1;
+                    &::before {
+                        content: '★★★★★';
+                        letter-spacing: 3px;
+                        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+            &.info-btn{
+                margin-top: 16px;
+                align-items: unset;
+                .favorite-btn{
+                    img{
+                        &:last-child{
+                            display: none;
+                        }
+                    }
+                    &.like-btn{
+                        img{
+                            &:first-child{
+                                display: none;
+                            }
+                            &:last-child{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                img{
+                    width: 16px;
+                }
+            }
+        }
+    }
+}
