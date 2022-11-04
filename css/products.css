@@ -72,7 +72,7 @@
   margin-top: 100px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   .product-list-box {
     margin-top: 40px;
   }
