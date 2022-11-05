@@ -1,10 +1,3 @@
-@charset "UTF-8";
-:root {
-  --star-size: 12px;
-  --star-color: #eee;
-  --star-background: #fc0;
-}
-
 .products-banner {
   width: 100%;
   height: 400px;
@@ -169,29 +162,6 @@
   font-weight: 500;
   text-decoration: line-through;
   color: #B4B4B4;
-}
-
-.product-list-box .product-item-info .info-item.star-box {
-  margin: 8px 0;
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.product-list-box .product-item-info .info-item.star-box .stars {
-  --percent: calc(var(--rating) / 5 * 100%);
-  display: inline-block;
-  font-size: var(--star-size);
-  font-family: Times;
-  line-height: 1;
-}
-
-.product-list-box .product-item-info .info-item.star-box .stars::before {
-  content: '★★★★★';
-  letter-spacing: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(var(--star-background)), to(var(--star-color)));
-  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .product-list-box .product-item-info .info-item.info-btn {
