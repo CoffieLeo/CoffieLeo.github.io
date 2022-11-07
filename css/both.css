@@ -20,7 +20,7 @@ body {
 }
 
 body.gray-bg {
-  background-color: #FBFBFB;
+  background-color: red;
 }
 
 ::-webkit-input-placeholder {
@@ -652,11 +652,14 @@ header .main-menu-mobile small {
           flex-direction: column;
 }
 
+.cart-top .cart-item:last-child {
+  padding-left: 8px;
+}
+
 .cart-top .cart-item img {
   width: 80px;
   height: auto;
   margin: 0;
-  margin-right: 8px;
 }
 
 .cart-top .cart-item .cart-title {
@@ -1014,5 +1017,85 @@ footer .copyright-box .copyright-item ul li:before {
 footer .copyright-box .copyright-item ul li a {
   color: white;
   text-decoration: none;
+}
+
+.product-item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.product-item-info .info-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-item-info .info-item .info-sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1E1E1E;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+}
+
+.product-item-info .info-item img {
+  width: 100%;
+}
+
+.product-item-info .info-item.info-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.product-item-info .info-item.info-price .new-price {
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.product-item-info .info-item.info-price .old-price {
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: line-through;
+  color: #B4B4B4;
+}
+
+.product-item-info .info-item.info-btn {
+  margin-top: 16px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.product-item-info .info-item.info-btn .favorite-btn img:last-child {
+  display: none;
+}
+
+.product-item-info .info-item.info-btn .favorite-btn.like-btn img:first-child {
+  display: none;
+}
+
+.product-item-info .info-item.info-btn .favorite-btn.like-btn img:last-child {
+  display: block;
+}
+
+.product-item-info .info-item.info-btn img {
+  width: 16px;
 }
 /*# sourceMappingURL=both.css.map */
