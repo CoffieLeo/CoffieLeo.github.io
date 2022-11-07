@@ -610,6 +610,10 @@
   font-weight: 700;
 }
 
+.product-detail-info-box .product-detail-tab-box .tab-content .product-info-box .product-info-list {
+  margin-top: 30px;
+}
+
 .product-detail-info-box .product-detail-tab-box .tab-content .product-info-box .product-list-item {
   margin-bottom: 10px;
 }
