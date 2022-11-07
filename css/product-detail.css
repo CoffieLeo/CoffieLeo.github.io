@@ -402,4 +402,90 @@
   font-weight: 400;
   margin-top: 20px;
 }
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box {
+  margin-bottom: 30px;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .method-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .method-title span {
+  text-decoration: underline;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .spec-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .spec-info img {
+  margin-right: 8px;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: left;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box .flow-item {
+  position: relative;
+  width: 20%;
+  margin-right: 75px;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box .flow-item:after {
+  content: '';
+  position: absolute;
+  top: 26px;
+  right: -52px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("/img/arrow-right.svg") center center no-repeat;
+  background-size: 6px auto;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box .flow-item:last-child {
+  margin-right: 0;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box .flow-item:last-child:after {
+  display: none;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box .flow-item .item-num {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product-detail-info-box .product-detail-tab-box .tab-content .use-method-box .flow-box .flow-item .item-content {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
 /*# sourceMappingURL=product-detail.css.map */

@@ -312,6 +312,67 @@
                     margin-top: 20px;
                 }
             }
+            .use-method-box{
+                margin-bottom: 30px;
+                .method-title{
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .spec-info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 30px;
+                    img{
+                        margin-right: 8px;
+                    }
+                }
+                .flow-box{
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    text-align: left;
+                    .flow-item{
+                        position: relative;
+                        width: 20%;
+                        margin-right: 75px;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            top: 26px;
+                            right: -52px;
+                            display: block;
+                            width: 24px;
+                            height: 24px;
+                            background: url('/img/arrow-right.svg') center center no-repeat;
+                            background-size: 6px auto;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                            &:after{
+                                display: none;
+                            }
+                        }
+                        .item-num{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                        .item-content{
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 32px;
+                        }
+                    }
+                }
+            }
         }
     }
 }

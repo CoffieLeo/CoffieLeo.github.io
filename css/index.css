@@ -241,6 +241,13 @@
   }
 }
 
+@media screen and (max-width: 425px) {
+  .product-box .product-info {
+    text-align: center;
+    padding: 12px;
+  }
+}
+
 .product-box .title, .product-box .sub-title {
   font-weight: 700;
   color: #1E1E1E;
