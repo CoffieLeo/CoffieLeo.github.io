@@ -20,7 +20,7 @@ body {
 }
 
 body.gray-bg {
-  background-color: red;
+  background-color: #FBFBFB;
 }
 
 ::-webkit-input-placeholder {
