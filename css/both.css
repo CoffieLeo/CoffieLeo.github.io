@@ -1027,7 +1027,7 @@ footer .copyright-box .copyright-item ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .product-item-info .info-item {
@@ -1063,10 +1063,22 @@ footer .copyright-box .copyright-item ul li a {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 576px) {
+  .product-item-info .info-item.info-title {
+    font-size: 14px;
+  }
+}
+
 .product-item-info .info-item.info-price .new-price {
   font-size: 20px;
   font-weight: 600;
   margin-right: 8px;
+}
+
+@media screen and (max-width: 576px) {
+  .product-item-info .info-item.info-price .new-price {
+    font-size: 14px;
+  }
 }
 
 .product-item-info .info-item.info-price .old-price {

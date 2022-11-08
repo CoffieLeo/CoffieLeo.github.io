@@ -730,7 +730,7 @@ footer{
 .product-item-info{
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     .info-item{
         position: relative;
         display: flex;
@@ -754,12 +754,18 @@ footer{
             color: #333;
             margin-top: 5px;
             letter-spacing: 1px;
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
         }
         &.info-price{
             .new-price{
                 font-size: 20px;
                 font-weight: 600;
                 margin-right: 8px;
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
             }
             .old-price{
                 font-size: 12px;
