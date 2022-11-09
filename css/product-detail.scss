@@ -270,13 +270,13 @@
                     font-weight: 500;
                     color: #7C7C7C;
                     margin-right: 15px;
-                    &.like-btn{
+                    &.like{
                         img{
                             &:first-child{
                                 display: none;
                             }
                             &:last-child{
-                                display: block;
+                                display: inline-block;
                             }
                         }
                     }
@@ -580,6 +580,11 @@
         @media screen and (max-width: 576px) {
             margin-top: 15px;
         }
+        .product-item-info{
+            .new-price{
+                font-size: 16px;
+            }
+        }
     }
 }
 .product-title{
@@ -720,6 +725,7 @@
                 }
             }
             .review-star{
+                margin-top: 20px;
                 span{
                     color: #979797;
                     margin-left: 9px;

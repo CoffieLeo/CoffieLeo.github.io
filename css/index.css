@@ -155,11 +155,18 @@
 .how-box .how-list .how-item {
   position: relative;
   margin-right: 50px;
+  text-align: justify;
 }
 
 @media screen and (max-width: 767px) {
   .how-box .how-list .how-item {
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .how-box .how-list .how-item:first-child {
+    letter-spacing: 2px;
   }
 }
 
@@ -192,16 +199,37 @@
 
 .show-logo .img-box {
   display: block;
+  text-align: center;
+}
+
+.show-logo .img-box img {
+  margin: 0 auto;
+}
+
+.show-logo .img-box img:first-child {
+  height: 70px;
+}
+
+@media screen and (max-width: 1100px) {
+  .show-logo .img-box img:first-child {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .show-logo .img-box img:first-child {
+    height: 45px;
+  }
 }
 
 .show-logo p {
   display: inline-block;
   background: #282828;
   color: white;
-  padding: 16px;
+  padding: 10px 20px;
   font-size: 60px;
   font-weight: 600;
-  line-height: 1;
+  line-height: 76px;
   margin-top: 35px;
 }
 
@@ -213,6 +241,7 @@
 
 .show-logo p span {
   display: inline-block;
+  margin-left: 42px;
 }
 
 @media screen and (max-width: 576px) {
@@ -329,12 +358,19 @@
     width: 15%;
   }
   .product-box .product-img-box .product-item:nth-child(1) img, .product-box .product-img-box .product-item:nth-child(5) img {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
   .product-box .product-img-box .product-item:nth-child(2) img, .product-box .product-img-box .product-item:nth-child(4) img {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .product-box .product-img-box .product-item {
+    width: 20%;
+    margin: 0;
   }
 }
 
@@ -354,13 +390,6 @@
 
 .product-box .product-img-box .product-item p {
   font-size: 12px;
-}
-
-@media screen and (max-width: 767px) {
-  .product-box .product-img-box .product-item {
-    width: 20%;
-    margin: 0px;
-  }
 }
 
 .r9-info-box .r9-box {
@@ -1248,6 +1277,8 @@
     max-width: 100%;
     text-align: center;
     display: block;
+    padding-top: 39px;
+    padding-bottom: 41px;
   }
 }
 
@@ -1339,6 +1370,10 @@
   }
 }
 
+.about-box .about-item .main-title {
+  margin-bottom: 30px;
+}
+
 .about-box .about-item .sub-title {
   font-size: 20px;
   text-transform: uppercase;
@@ -1375,6 +1410,7 @@
   font-weight: normal;
   margin-top: 10px;
   font-size: 14px;
+  margin-bottom: 30px;
 }
 
 .about-box .more-btn {

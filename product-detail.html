@@ -30,9 +30,9 @@
 
     <!-- product-detail-swiper-box -->
     <div class="product-detail-swiper-box">
-        <div class="container px-0 px-lg-3">
-            <div class="row mx-0 mx-lg-3 align-items-start">
-                <div class="col-md-6 col-lg-7 px-0 px-lg-3">
+        <div class="container px-0 px-md-3">
+            <div class="row mx-0 mx-md-3 align-items-start">
+                <div class="col-md-6 col-lg-6 px-0 px-md-3">
                     <div class="swiper detail-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-5 px-0 px-lg-3">
+                <div class="col-md-6 col-lg-6 px-0 px-md-3">
                     <div class="product-detail-info">
                         <div class="detail-top-box">
                             <div class="detail-title">
@@ -105,7 +105,7 @@
                                 <div class="price-item free d-md-none">免運</div>
                             </div>
                         </div>
-                        <div class="ctrl-num-box d-none d-md-block">
+                        <div class="ctrl-num-box d-none d-md-flex">
                             <div class="num-ctrl-item">
                                 數量
                             </div>
@@ -229,6 +229,7 @@
                             </a>
                         </div>
                         <div class="detail-info-bottom d-none d-md-flex">
+                            <!-- add like change img -->
                             <div class="item favorite-btn">
                                 <img src="/img/favorite-white.svg" alt="">
                                 <img src="/img/favorite-red.svg" alt="">
@@ -345,10 +346,12 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="profile-info">
                                 <div class="product-info-box">
-                                    <div class="product-info-title">
+                                    <!-- <div class="product-info-title">
                                         產品資訊
-                                    </div>
+                                    </div> -->
                                     <div class="product-info-list">
                                         <div class="product-list-item">
                                             <dt class="product-list-title">產品編號</dt>
@@ -373,7 +376,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="profile-info">...</div>
                             <div class="tab-pane fade" id="recommend" role="tabpanel" aria-labelledby="product-recommend">...</div>
                         </div>
                     </div>

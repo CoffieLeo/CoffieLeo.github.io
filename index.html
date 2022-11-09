@@ -77,126 +77,10 @@
                     </div>
                     <div class="sub-menu-item shopping-cart">
                         <div class="dropdown">
-                            <button class="cart-btn" onclick="openCart()">
+                            <!-- add is-shopping to show red point -->
+                            <a href="javascript:;" class="cart-btn is-shopping">
                                 <img src="/img/icon-cart.png" alt="">
-                            </button>
-                            <!-- add active to show -->
-                            <div class="dropdown-box shopping-cart-box">
-                                <button class="close-btn" onclick="closeCart()">
-                                    <img src="/img/close-btn.svg" alt="">
-                                </button>
-                                <div class="cart-box">
-                                    <div class="cart-top">
-                                        <div class="cart-item">
-                                            <img src="/img/cart/cart-img-default-0.png" alt="">
-                                        </div>
-                                        <div class="cart-item">
-                                            <div class="cart-title">
-                                                <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
-                                            </div>
-                                            <div class="cart-price">NT$2160</div>
-                                            <div class="cart-sale">
-                                                <div class="cart-old-price">NT$2700</div>
-                                                <div class="cart-sale-num">20%OFF</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cart-bottom">
-                                        <div class="num-item num-ctrl">
-                                            <img src="/img/cart/cart-num-01.png" alt="">
-                                        </div>
-                                        <div class="num-item total-count">
-                                            <input id="total-count" type="text" value="1">
-                                        </div>
-                                        <div class="num-item num-ctrl">
-                                            <img src="/img/cart/cart-num-02.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cart-box cart-custom">
-                                    <div class="custom-item">
-                                        <div class="custom-p">
-                                            <p class="main-p">自訂個人化護理程序，全方位決肌膚問題</p>
-                                            <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
-                                        </div>
-                                        <div class="cart-top">
-                                            <div class="cart-item">
-                                                <img src="/img/cart/cart-img-default-1.png" alt="">
-                                            </div>
-                                            <div class="cart-item">
-                                                <div class="cart-title">
-                                                    <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                                    </div>
-                                                </div>
-                                                <div class="cart-price">NT$2160</div>
-                                                <div class="cart-sale">
-                                                    <div class="cart-old-price">NT$2700</div>
-                                                    <div class="cart-sale-num">20%OFF</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-bottom">
-                                            <div class="num-item num-ctrl">
-                                                <img src="/img/cart/cart-num-01.png" alt="">
-                                            </div>
-                                            <div class="num-item">
-                                                <input type="text" value="1">
-                                            </div>
-                                            <div class="num-item num-ctrl">
-                                                <img src="/img/cart/cart-num-02.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="cart-info">
-                                            <img src="/img/cart/cart-info.svg" alt="">
-                                            此商品數量不得超過20ml主商品數量
-                                        </div>
-                                    </div>
-                                    <div class="custom-item">
-                                        <div class="custom-p">
-                                            <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
-                                        </div>
-                                        <div class="cart-top">
-                                            <div class="cart-item">
-                                                <img src="/img/cart/cart-img-default-2.png" alt="">
-                                            </div>
-                                            <div class="cart-item">
-                                                <div class="cart-title">
-                                                    <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                                    </div>
-                                                </div>
-                                                <div class="cart-price">NT$2160</div>
-                                                <div class="cart-sale">
-                                                    <div class="cart-old-price">NT$2700</div>
-                                                    <div class="cart-sale-num">20%OFF</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart-bottom">
-                                            <div class="num-item num-ctrl">
-                                                <img src="/img/cart/cart-num-01.png" alt="">
-                                            </div>
-                                            <div class="num-item">
-                                                <input type="text" value="1">
-                                            </div>
-                                            <div class="num-item num-ctrl">
-                                                <img src="/img/cart/cart-num-02.png" alt="">
-                                            </div>
-                                        </div>
-                                        <!-- <div class="cart-info">
-                                            <img src="/img/cart/cart-info.svg" alt="">
-                                            此商品數量不得超過20ml主商品數量
-                                        </div> -->
-                                    </div>
-                                </div>
-                                <div class="cart-footer">
-                                    <button class="white-btn">立即購買</button>
-                                    <button class="black-btn">加入購物車<img src="/img/icon-arrow-right-w.png" alt=""></button>
-                                </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div class="sub-menu-item sidebar-menu">
@@ -282,8 +166,8 @@
     <!-- show logo -->
     <div class="show-logo">
         <div class="img-box">
-            <img class="d-none d-sm-block" src="/img/PAL_slogan.svg" alt="">
-            <img class="d-block d-sm-none" src="/img/PAL_slogan-mobile.svg" alt="">
+            <img class="d-none d-md-block" src="/img/PAL_slogan.svg" alt="">
+            <img class="d-block d-md-none" src="/img/PAL_slogan-mobile.svg" alt="">
         </div>
         <p>PERSONALIZATION IS BEAUTY <span>適合我的，才美</span></p>
     </div>
@@ -291,7 +175,7 @@
     <!-- product -->
     <div class="product-box">
         <div class="product-info">
-            <small class="small-title">Personalized Skin Care</small>
+            <small class="small-title">PERSONALIZED SKIN CARE</small>
             <div class="main-title">
                 自訂個人化護理程序
             </div>
@@ -462,7 +346,7 @@
     <div class="meet-skin-box">
         <div class="container-fluid px-0">
             <div class="row mx-0">
-                <div class="col-md-6">
+                <div class="col-md-6 px-0">
                     <div class="skin-item">
                         <div class="item-info">
                             <small class="small-title">Meet skin needs</small>
@@ -481,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 px-0">
                     <div class="skin-item">
                         <div class="item-info">
                             <ul>
@@ -671,7 +555,7 @@
                     <p>聯絡我們</p>
                     <ul>
                         <li><dt>服務專線</dt> <dd>+886 2-6604-0090</dd></li>
-                        <li><dt>聯絡信箱</dt> <dd><a href="mailto:proactivelab@digidoctor.cc">proactivelab@digidoctor.cc</a></dd></li>
+                        <li><dt>聯絡信箱</dt> <dd><a href="mailto:persactivelab@digidoctor.cc">persactivelab@digidoctor.cc</a></dd></li>
                         <li><dt>服務時間</dt> <dd>週一至週五 10:00-17:00 (國定假期除外)</dd></li>
                     </ul>
                 </div>
@@ -751,43 +635,130 @@
                     </div>
                 </div>
                 <div class="footer-menu-mobile">
-                    <div class="menu-item-mobile">
+                    <div class="accordion" id="footer-menu">
+                        <div class="card">
+                            <div class="card-header" id="footerOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    關於我們
+                                    <img class="add-img" src="/img/add.svg" alt="">
+                                    <img class="reduce-img" src="/img/reduce.svg" alt="">
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="footerOne" data-parent="#footer-menu">
+                                <div class="card-body">
+                                    <div class="footer-panel">
+                                        <a href="javascript:;">品牌故事</a>
+                                        <a href="javascript:;">科技護膚主張</a>
+                                        <a href="javascript:;">活性配方LAB</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="footerTwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    購物須知
+                                    <img class="add-img" src="/img/add.svg" alt="">
+                                    <img class="reduce-img" src="/img/reduce.svg" alt="">
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="footerTwo" data-parent="#footer-menu">
+                                <div class="card-body">
+                                    <div class="footer-panel">
+                                        <a href="javascript:;">付款方式</a>
+                                        <a href="javascript:;">出貨與配送說明</a>
+                                        <a href="javascript:;">發票說明</a>
+                                        <a href="javascript:;">退貨流程</a>
+                                        <a href="javascript:;">訂單相關</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="footerThree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    會員回饋
+                                    <img class="add-img" src="/img/add.svg" alt="">
+                                    <img class="reduce-img" src="/img/reduce.svg" alt="">
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="footerThree" data-parent="#footer-menu">
+                                <div class="card-body">
+                                    <div class="footer-panel">
+                                        <a href="javascript:;">新夥伴優惠</a>
+                                        <a href="javascript:;">免費試用</a>
+                                        <a href="javascript:;">消費點數回饋</a>
+                                        <a href="javascript:;">生日禮</a>
+                                        <a href="javascript:;">夥伴日</a>
+                                        <a href="javascript:;">心得分享回饋</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="footerFour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    常見問答
+                                    <img class="add-img" src="/img/add.svg" alt="">
+                                    <img class="reduce-img" src="/img/reduce.svg" alt="">
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="footerFour" data-parent="#footer-menu">
+                                <div class="card-body">
+                                    <div class="footer-panel">
+                                        <a href="javascript:;">產品使用相關</a>
+                                        <a href="javascript:;">訂購相關問題</a>
+                                        <a href="javascript:;">會員計畫相關</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    <!-- <div class="menu-item-mobile">
                         <button class="footer-accordion">關於我們</button>
                         <div class="footer-panel">
-                            <a href="javascript:;">- 品牌故事</a>
-                            <a href="javascript:;">- 科技護膚主張</a>
-                            <a href="javascript:;">- 活性配方LAB</a>
+                            <a href="javascript:;">-  品牌故事</a>
+                            <a href="javascript:;">-  科技護膚主張</a>
+                            <a href="javascript:;">-  活性配方LAB</a>
                         </div>
                     </div>
                     <div class="menu-item-mobile">
                         <button class="footer-accordion">購物須知</button>
                         <div class="footer-panel">
-                            <a href="javascript:;">- 付款方式</a>
-                            <a href="javascript:;">- 出貨與配送說明</a>
-                            <a href="javascript:;">- 發票說明</a>
-                            <a href="javascript:;">- 退貨流程</a>
-                            <a href="javascript:;">- 訂單相關</a>
+                            <a href="javascript:;">-  付款方式</a>
+                            <a href="javascript:;">-  出貨與配送說明</a>
+                            <a href="javascript:;">-  發票說明</a>
+                            <a href="javascript:;">-  退貨流程</a>
+                            <a href="javascript:;">-  訂單相關</a>
                         </div>
                     </div>
                     <div class="menu-item-mobile">
                         <button class="footer-accordion">會員回饋</button>
                         <div class="footer-panel">
-                            <a href="javascript:;">- 新夥伴優惠</a>
-                            <a href="javascript:;">- 免費試用</a>
-                            <a href="javascript:;">- 消費點數回饋</a>
-                            <a href="javascript:;">- 生日禮</a>
-                            <a href="javascript:;">- 夥伴日</a>
-                            <a href="javascript:;">- 心得分享回饋</a>
+                            <a href="javascript:;">-  新夥伴優惠</a>
+                            <a href="javascript:;">-  免費試用</a>
+                            <a href="javascript:;">-  消費點數回饋</a>
+                            <a href="javascript:;">-  生日禮</a>
+                            <a href="javascript:;">-  夥伴日</a>
+                            <a href="javascript:;">-  心得分享回饋</a>
                         </div>
                     </div>
                     <div class="menu-item-mobile">
                         <button class="footer-accordion">常見問答</button>
                         <div class="footer-panel">
-                            <a href="javascript:;">- 產品使用相關</a>
-                            <a href="javascript:;">- 訂購相關問題</a>
-                            <a href="javascript:;">- 會員計畫相關</a>
+                            <a href="javascript:;">-  產品使用相關</a>
+                            <a href="javascript:;">-  訂購相關問題</a>
+                            <a href="javascript:;">-  會員計畫相關</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -801,6 +772,124 @@
             </div>
         </div>
     </footer>
+
+    <!-- add active to show -->
+    <div class="shopping-cart-box">
+        <button class="close-btn" onclick="closeCart()">
+            <img src="/img/close-btn.svg" alt="">
+        </button>
+        <div class="cart-box">
+            <div class="cart-top">
+                <div class="cart-item">
+                    <img src="/img/cart/cart-img-default-0.png" alt="">
+                </div>
+                <div class="cart-item">
+                    <div class="cart-title">
+                        <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                    </div>
+                    <div class="cart-price">NT$2160</div>
+                    <div class="cart-sale">
+                        <div class="cart-old-price">NT$2700</div>
+                        <div class="cart-sale-num">20%OFF</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-bottom">
+                <div class="num-item num-ctrl">
+                    <img src="/img/cart/cart-num-01.png" alt="">
+                </div>
+                <div class="num-item total-count">
+                    <input id="total-count" type="text" value="1">
+                </div>
+                <div class="num-item num-ctrl">
+                    <img src="/img/cart/cart-num-02.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="cart-box cart-custom">
+            <div class="custom-item">
+                <div class="custom-p">
+                    <p class="main-p">自訂個人化護理程序，全方位決肌膚問題</p>
+                    <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
+                </div>
+                <div class="cart-top">
+                    <div class="cart-item">
+                        <img src="/img/cart/cart-img-default-1.png" alt="">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-title">
+                            <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="cart-price">NT$2160</div>
+                        <div class="cart-sale">
+                            <div class="cart-old-price">NT$2700</div>
+                            <div class="cart-sale-num">20%OFF</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bottom">
+                    <div class="num-item num-ctrl">
+                        <img src="/img/cart/cart-num-01.png" alt="">
+                    </div>
+                    <div class="num-item">
+                        <input type="text" value="1">
+                    </div>
+                    <div class="num-item num-ctrl">
+                        <img src="/img/cart/cart-num-02.png" alt="">
+                    </div>
+                </div>
+                <div class="cart-info">
+                    <img src="/img/cart/cart-info.svg" alt="">
+                    此商品數量不得超過20ml主商品數量
+                </div>
+            </div>
+            <div class="custom-item">
+                <div class="custom-p">
+                    <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
+                </div>
+                <div class="cart-top">
+                    <div class="cart-item">
+                        <img src="/img/cart/cart-img-default-2.png" alt="">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-title">
+                            <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="cart-price">NT$2160</div>
+                        <div class="cart-sale">
+                            <div class="cart-old-price">NT$2700</div>
+                            <div class="cart-sale-num">20%OFF</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bottom">
+                    <div class="num-item num-ctrl">
+                        <img src="/img/cart/cart-num-01.png" alt="">
+                    </div>
+                    <div class="num-item">
+                        <input type="text" value="1">
+                    </div>
+                    <div class="num-item num-ctrl">
+                        <img src="/img/cart/cart-num-02.png" alt="">
+                    </div>
+                </div>
+                <!-- <div class="cart-info">
+                    <img src="/img/cart/cart-info.svg" alt="">
+                    此商品數量不得超過20ml主商品數量
+                </div> -->
+            </div>
+        </div>
+        <div class="cart-footer">
+            <button class="white-btn">立即購買</button>
+            <button class="black-btn">加入購物車<img src="/img/icon-arrow-right-w.png" alt=""></button>
+        </div>
+    </div>
 
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
