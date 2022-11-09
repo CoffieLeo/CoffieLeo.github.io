@@ -13,3 +13,11 @@ var swiper2 = new Swiper(".detail-swiper", {
         clickable: true,
     },
 });
+
+
+var swiper = new Swiper(".featured-swiper", {
+    spaceBetween: 10,
+    slidesPerView: 2,
+    freeMode: true,
+    watchSlidesProgress: true,
+});

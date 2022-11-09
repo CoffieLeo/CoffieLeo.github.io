@@ -223,7 +223,6 @@
 }
 
 .product-detail-swiper-box .product-detail-info .cart-price-box .cart-price {
-  min-width: 195px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

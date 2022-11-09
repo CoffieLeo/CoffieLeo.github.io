@@ -186,7 +186,7 @@ button.black-btn {
 
 button.black-btn img {
   margin: 0 3px;
-  width: 20px;
+  width: 12px;
 }
 
 header nav {
@@ -652,12 +652,19 @@ header .main-menu-mobile small {
           flex-direction: column;
 }
 
+.cart-top .cart-item:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 80px;
+}
+
 .cart-top .cart-item:last-child {
   padding-left: 8px;
 }
 
 .cart-top .cart-item img {
-  width: 80px;
+  width: 100%;
   height: auto;
   margin: 0;
 }
