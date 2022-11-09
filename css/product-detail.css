@@ -493,7 +493,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .product-detail-info-box .product-detail-tab-box .tab-content .personalize-box .personalize-info-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -559,7 +559,7 @@
   bottom: 0px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .product-detail-info-box .product-detail-tab-box .tab-content .personalize-box .personalize-info-box .more-btn {
     position: static;
     right: unset;
