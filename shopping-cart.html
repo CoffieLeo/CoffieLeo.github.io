@@ -9,21 +9,233 @@
     <link rel="stylesheet" href="css/both.css">
     <link rel="stylesheet" href="css/shopping-cart.css">
 </head>
-<body>
-
+<body class="logged-in">
     <div class="shopping-pag-box">
-        <div class="shopping-step-list">
-            <!-- breadcrumb -->
-            <div class="bread-crumb-box d-none d-md-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="breadcrumb-wrap">
-                                <ol class="breadcrumb">
-                                    <li><a href="#">確認購物車</a></li>
-                                    <li><a href="#">運送資訊與付款</a></li>
-                                    <li><a href="#">完成訂購</a></li>
-                                </ol>
+        <div class="step-flow-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <ol class="breadcrumb">
+                                <li class="active"><a href="#">確認購物車</a></li>
+                                <li><a href="#">運送資訊與付款</a></li>
+                                <li><a href="#">完成訂購</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="non-member-box">
+                            <p>已經是會員？<a href="">登入</a>即享首購及會員專屬優惠！</p>
+                            <p>※為了提供您更快速便捷的購物流程，非會員可於首次購物同時註冊成為會員※</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- shopping container -->
+        <div class="shopping-container-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <div class="product-list-box">
+                            <div class="list-header">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    <label class="form-check-label" for="blankCheckbox">
+                                        選擇全部
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="list-content">
+                                <div class="list-item">
+                                    <div class="item product-item">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox-3" value="option3" aria-label="...">
+                                        </div>
+                                        <a href="javascript:;">
+                                            <div class="img-box">
+                                                <img src="/img/product/product-list-item-2.png" alt="">
+                                            </div>
+                                            <span>維他命A胜肽極效青春精華 A18 20ml</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="item num-item">
+                                        <div class="ctrl-num-box d-none d-md-flex">
+                                            <div class="num-ctrl-item">
+                                                數量
+                                            </div>
+                                            <div class="num-ctrl-item">
+                                                <div class="num-item num-ctrl">
+                                                    <img src="/img/cart/cart-num-01.png" alt="">
+                                                </div>
+                                                <div class="num-item total-count">
+                                                    <input id="total-count" type="text" value="1">
+                                                </div>
+                                                <div class="num-item num-ctrl">
+                                                    <img src="/img/cart/cart-num-02.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item price-item">
+                                        <!-- <div class="old-price">
+                                            NT$1800
+                                        </div> -->
+                                        <div class="new-price">
+                                            NT$2400
+                                        </div>
+                                    </div>
+                                    <div class="item remove-item">
+                                        <img src="/img/icon-remove.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="item product-item">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox-4" value="option3" aria-label="...">
+                                        </div>
+                                        <a href="javascript:;">
+                                            <div class="img-box">
+                                                <img src="/img/product/product-list-item-5.png" alt="">
+                                            </div>
+                                            <span>B5酵母極效修復精萃 R9+ 10ml</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="item num-item">
+                                        <div class="ctrl-num-box d-none d-md-flex">
+                                            <div class="num-ctrl-item">
+                                                數量
+                                            </div>
+                                            <div class="num-ctrl-item">
+                                                <div class="num-item num-ctrl">
+                                                    <img src="/img/cart/cart-num-01.png" alt="">
+                                                </div>
+                                                <div class="num-item total-count">
+                                                    <input id="total-count" type="text" value="1">
+                                                </div>
+                                                <div class="num-item num-ctrl">
+                                                    <img src="/img/cart/cart-num-02.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item price-item">
+                                        <div class="old-price">
+                                            NT$1800
+                                        </div>
+                                        <div class="new-price">
+                                            NT$2400
+                                        </div>
+                                    </div>
+                                    <div class="item remove-item">
+                                        <img src="/img/icon-remove.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="list-item">
+                                    <div class="item product-item">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox-5" value="option3" aria-label="...">
+                                        </div>
+                                        <a href="javascript:;">
+                                            <div class="img-box">
+                                                <img src="/img/product/product-list-item-4.png" alt="">
+                                            </div>
+                                            <span>玻尿酸神經醯胺極效保濕精華  H20 20ml</span>
+                                        </a>
+                                        
+                                    </div>
+                                    <div class="item num-item">
+                                        <div class="ctrl-num-box d-none d-md-flex">
+                                            <div class="num-ctrl-item">
+                                                數量
+                                            </div>
+                                            <div class="num-ctrl-item">
+                                                <div class="num-item num-ctrl">
+                                                    <img src="/img/cart/cart-num-01.png" alt="">
+                                                </div>
+                                                <div class="num-item total-count">
+                                                    <input id="total-count" type="text" value="1">
+                                                </div>
+                                                <div class="num-item num-ctrl">
+                                                    <img src="/img/cart/cart-num-02.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item price-item">
+                                        <!-- <div class="old-price">
+                                            NT$1800
+                                        </div> -->
+                                        <div class="new-price">
+                                            NT$850
+                                        </div>
+                                    </div>
+                                    <div class="item remove-item">
+                                        <img src="/img/icon-remove.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-footer">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox-1" value="option2" aria-label="...">
+                                    <label class="form-check-label" for="blankCheckbox-1">
+                                        我同意辦理退貨時，由 PRES. ACTIVE LAB 代為處理電子發票及銷貨退回證明單，以加速退貨退款作業。
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="free-box">
+                            <div class="limit-box">
+                                <img src="/img/icon-limit.png" alt="">
+                            </div>
+                            <img src="/img/shopping-free.png" alt="">
+                            <p>試用申請<span>首次購買限定</span></p>
+                            <div class="more-btn">
+                                <a href="javascript:;">
+                                    立即申請
+                                    <img src="/img/icon-arrow-right.png" alt="">
+                                    <img class="btn-black" src="/img/icon-arrow-right-w.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="use-coupon-box">
+                            可使用優惠券
+                            <img src="/img/arrow-right-b.svg" alt="">
+                        </div>
+                        <div class="transport-method">
+                            選擇運送方式
+                            <div class="form-group">
+                                <img src="/img/icon-arrow.png" alt="">
+                                <select class="form-control" id="exampleFormControlSelect2">
+                                    <option>本島宅配 NT$90</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pay-detail-box">
+                            <div class="pay-detail-title">
+                                付款明細
+                            </div>
+                            <div class="pay-detail-list">
+                                <div class="pay-detail-item">
+                                    <div class="item">商品總計</div>
+                                    <div class="item">NT$4560</div>
+                                </div>
+                                <div class="pay-detail-item">
+                                    <div class="item">運費總計<div class="lack">還差 <span>NT$234</span>即可享免運優惠</div></div>
+                                    <div class="item">NT$90</div>
+                                </div>
+                                <div class="pay-detail-item">
+                                    <div class="item">全站優惠券折抵</div>
+                                    <div class="item">-NT$100</div>
+                                </div>
+                                <div class="pay-detail-item">
+                                    <div class="item">使用點數折抵</div>
+                                    <div class="item">-NT$0</div>
+                                </div>
                             </div>
                         </div>
                     </div>

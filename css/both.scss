@@ -27,6 +27,12 @@ body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.form-control{
+    background-color: #F8F9F9;
+    border: none;
+    font-size: 14px;
+}
+
 .under-line{
     display: inline-block;
     border-bottom: 2px #1E1E1E solid;
@@ -148,7 +154,10 @@ header{
         align-items: center;
         width: 100%;
         margin: 0 auto;
-        padding: 16px;
+        padding: 30px 16px;
+        @media screen and (max-width: 576px) {
+            padding: 16px;
+        }
         ul{
             margin-bottom: 0;
         }
@@ -169,7 +178,7 @@ header{
                 text-align: center;
                 text-decoration: none;
                 color: black;
-                margin: 0 8px;
+                margin: 0 16px;
                 font-size: 16px;
                 small{
                     display: block;
@@ -320,6 +329,10 @@ header{
                     @media screen and (max-width: 1280px) {
                         display: block;
                         width: 80px;
+                    }
+                    @media screen and (max-width: 576px) {
+                        display: block;
+                        width: 68px;
                     }
                 }
             }
@@ -494,9 +507,6 @@ header{
                     margin-right: 0;
                 }
             }
-            input[type='checkbox'] {
-                accent-color: #1E1E1E;
-            }
         }
         .cart-price{
             font-size: 14px;
@@ -544,7 +554,7 @@ footer{
     .footer-box{
         display: flex;
         justify-content: space-around;
-        padding: 30px 16px;
+        padding: 80px 16px 30px;
         margin: 0 auto;
         @media screen and (max-width: 767px) {
             flex-direction: column;
@@ -577,9 +587,9 @@ footer{
         }
         .footer-about{
             margin-left: 125px;
-            margin-top: 50px;
             @media screen and (max-width: 425px) {
                 margin-left: 27px;
+                margin-top: 50px;
             }
         }
         p{
@@ -874,4 +884,8 @@ footer{
 .breadcrumb{
     background-color: transparent;
     padding: 0;
+}
+
+input[type='checkbox'] {
+    accent-color: #1E1E1E;
 }
