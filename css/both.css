@@ -247,6 +247,11 @@ header nav .main-menu {
   }
 }
 
+header nav .main-menu li.disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
 header nav .main-menu a {
   display: block;
   text-align: center;
@@ -868,6 +873,8 @@ footer .footer-menu-box ul dd {
 footer .footer-menu-box ul a {
   color: white;
   text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 footer .footer-menu {
