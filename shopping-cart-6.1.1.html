@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAL 購物車</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/both.css">
+    <link rel="stylesheet" href="css/shopping-cart.css">
+</head>
+<!-- if loggined => add logged-in class  -->
+<body class="logged-in">
+    <div class="shopping-pag-box">
+        <!-- step -->
+        <div class="step-flow-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb-wrap">
+                            <ol class="breadcrumb">
+                                <li><a href="#">確認購物車</a></li>
+                                <li class="active"><a href="#">運送資訊與付款</a></li>
+                                <li><a href="#">完成訂購</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shopping-form-box">
+            <div class="container-fluid px-0">
+                <div class="row mx-0">
+                    <div class="col-12 px-0">
+                        <div class="form-title">
+                            訂購人資訊 <sup>*</sup>
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="name" class="form-control" id="name" placeholder="請輸入姓名">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="phone" class="form-control" id="phone" placeholder="請選入手機號碼">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="請輸入電子信箱">
+                            </div>
+                            <div class="form-info">
+                                <img src="img/cart/cart-info.svg" alt=""> 結帳同時完成會員註冊，這將會是你的會員帳號，歡迎加入！
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" id="checkPassword" placeholder="請再次輸入密碼">
+                                </div>
+                            </div>
+                            <div class="form-group is-ok">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        我已閱讀並同意 <a href="">隱私權政策</a> 及 <a href="">服務條款</a>。
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- shopping-pay-box -->
+        <div class="shopping-pay-box">
+            <div class="shopping-pay-container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 d-none d-md-flex">
+                            <a href="" class="go-shopping">
+                                <img src="img/icon-arrow-right.png" alt=""> 返回上一步，編輯購物車
+                            </a>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-center justify-content-md-end">
+                            <div class="go-pay-box">
+                                <div class="pay-item">
+                                    <div class="item">結帳總金額</div>
+                                    <div class="item">NT$4460</div>
+                                </div>
+                                <div class="pay-item">
+                                    <div class="item">商品數量</div>
+                                    <div class="item">4</div>
+                                </div>
+                                <div class="pay-item">
+                                    <div class="more-btn black-btn">
+                                        <a href="javascript:;">
+                                            前往結帳
+                                            <img src="img/icon-arrow-right.png" alt="">
+                                            <img class="btn-black" src="img/icon-arrow-right-w.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/shopping-cart.js"></script>
+    
+</body>
+</html>
