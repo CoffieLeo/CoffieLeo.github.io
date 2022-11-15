@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="title-item">
-                            <a href="">常用收件地址 <img src="img/arrow-right.svg" alt=""></a>
+                            <a href="javascript:;" onclick="openAddressBox()">常用收件地址 <img src="img/arrow-right.svg" alt=""></a>
                         </div>
                     </div>
                     <form>
@@ -95,22 +95,22 @@
                     </div>
                     <form action="">
                         <div class="form-row">
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-6 col-md-5">
                                 <select id="inputState" class="form-control">
                                     <option selected>請選擇縣市</option>
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-5">
+                            <div class="form-group col-6 col-md-5">
                                 <select id="inputState" class="form-control">
                                     <option selected>請選擇地區</option>
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-2">
+                            <div class="form-group col-2 col-md-2">
                                 <input type="text" class="form-control" id="inputZip" placeholder="000">
                             </div>
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-10 col-md-12">
                                 <input type="text" class="form-control" id="inputAddress" placeholder="請輪入地址 (勿填寫郵政信箱)">
                             </div>
                         </div>
@@ -153,6 +153,65 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- add active to show -->
+    <!-- 常用收件地址 -->
+    <div class="choose-address-fixed fixed-model active">
+        <button class="close-btn" onclick="closeAddressBox()">
+            <img src="img/close-btn.svg" alt="">
+        </button>
+        <div class="cart-box">
+            <div class="cart-top">
+                <div class="fixed-title">常用收件地址</div>
+            </div>
+        </div>
+        <div class="cart-box cart-custom">
+            <div class="custom-item">
+                <div class="item">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">
+                            梁靜宜 <span>0972***135</span>
+                        </label>
+                    </div>
+                    <div class="custom-address">
+                        100 台北市信義區忠孝東路四段124號5樓
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="" class="default-address">預設</a>
+                    <div class="edit-box">
+                        <a href="">編輯</a>
+                        <a href="" class="remove-btn"><img src="img/icon-remove.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-item">
+                <div class="item">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1">
+                            梁靜安 <span>0922***264</span>
+                        </label>
+                    </div>
+                    <div class="custom-address">
+                        106 台北市大安區復興南路326巷127號4樓
+                    </div>
+                </div>
+                <div class="item">
+                    <!-- <a href="" class="default-address"></a> -->
+                    <div class="edit-box">
+                        <a href="">編輯</a>
+                        <a href="" class="remove-btn"><img src="img/icon-remove.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <button class="white-btn">取消</button>
+            <button class="black-btn">使用此收件地址<img src="img/icon-arrow-right-w.png" alt=""></button>
         </div>
     </div>
 

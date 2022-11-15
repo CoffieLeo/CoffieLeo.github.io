@@ -33,6 +33,14 @@ body{
     font-size: 14px;
 }
 
+.custom-control-input:checked~.custom-control-label::before{
+    border-color: #1E1E1E;
+    background-color: #1E1E1E;
+}
+.custom-control-input:focus~.custom-control-label::before{
+    box-shadow: none;
+}
+
 .under-line{
     display: inline-block;
     border-bottom: 2px #1E1E1E solid;
@@ -852,6 +860,10 @@ footer{
 
 // shopping-cart-box
 .shopping-cart-box{
+    
+}
+
+.fixed-model{
     position: fixed;
     top: 25px;
     right: -100%;
@@ -862,8 +874,8 @@ footer{
     z-index: 10;
     max-width: 375px;
     transition: 1s all;
-    &.active{
-        right: 16px;
+    @media screen and (max-width: 576px){
+        max-width: 100%;
     }
     .close-btn{
         position: absolute;
@@ -877,7 +889,8 @@ footer{
         padding-top: 15px;
         border-top: 1px #E0E0E0 solid;
         @media screen and (max-width: 890px){
-            max-height: 300px;
+            // max-height: 300px;
+            height: 300px;
             overflow: scroll;
             -webkit-overflow-scrolling: touch;
         }
@@ -886,6 +899,20 @@ footer{
         display: flex;
         justify-content: center;
         padding: 0 30px 30px;
+    }
+    .cart-info{
+        padding: 16px 30px;
+    }
+    &.active{
+        right: 16px;
+        @media screen and (max-width: 576px){
+            right: 0;
+        }
+    }
+    .fixed-title{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
     }
 }
 
