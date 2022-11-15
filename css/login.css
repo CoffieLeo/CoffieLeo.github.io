@@ -18,6 +18,12 @@
           align-items: center;
 }
 
+@media screen and (max-width: 576px) {
+  .login-container-box {
+    margin-top: 50px;
+  }
+}
+
 .login-container-box .login-title {
   font-weight: 600;
   font-size: 18px;
