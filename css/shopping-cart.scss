@@ -151,9 +151,9 @@
     font-size: 14px;
     font-weight: 400;
     .form-check-inline{
-        @media screen and (max-width: 576px) {
-           align-items: flex-start;
-        }
+        // @media screen and (max-width: 576px) {
+        //    align-items: flex-start;
+        // }
     }
     .form-check-input{
         @media screen and (max-width: 576px) {
