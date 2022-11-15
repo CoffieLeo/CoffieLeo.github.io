@@ -436,7 +436,7 @@
 
 @media screen and (max-width: 576px) {
   .is-ok {
-    padding: 20px 0px 0px;
+    padding: 20px 20px 0px;
     margin-top: 0px;
   }
 }
