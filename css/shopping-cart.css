@@ -414,14 +414,6 @@
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 576px) {
-  .shopping-form-box .form-info {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
 .shopping-form-box .form-info img {
   width: 12px;
   margin-right: 5px;
