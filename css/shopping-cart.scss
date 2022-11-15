@@ -627,6 +627,22 @@
                 border-top: 5px solid #F8F9F9;
                 margin-bottom: 0;
             }
+            .method-title{
+                display: flex;
+                .method-title-item{
+                    display: flex;
+                    align-items: center;
+                    &:last-child{
+                        margin-left: auto;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #333;
+                        img{
+                            width: 13px;
+                        }
+                    }
+                }
+            }
             .form-group{
                 position: relative;
                 margin-top: 20px;

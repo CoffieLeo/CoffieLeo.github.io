@@ -914,6 +914,32 @@
   }
 }
 
+.shopping-container-box .shopping-cart-info .transport-method .method-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopping-container-box .shopping-cart-info .transport-method .method-title .method-title-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-container-box .shopping-cart-info .transport-method .method-title .method-title-item:last-child {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+
+.shopping-container-box .shopping-cart-info .transport-method .method-title .method-title-item:last-child img {
+  width: 13px;
+}
+
 .shopping-container-box .shopping-cart-info .transport-method .form-group {
   position: relative;
   margin-top: 20px;
