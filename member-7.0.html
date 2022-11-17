@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member 7.0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/both.css">
+    <link rel="stylesheet" href="css/member.css">
+</head>
+<body>
+
+    <div class="member-header-box">
+        <ul>
+            <li>
+                <div class="sub-menu-item choice-lang">
+                    <div class="dropdown">
+                        <button class="lang-btn" onclick="chooseLang()">
+                            TW<img class="arrow" src="img/icon-arrow.png" alt="">
+                        </button>
+                        <!-- add active to show -->
+                        <div id="langDropdown" class="dropdown-box lang-box">
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="" class="icon-notification default-dot red-dot">
+                    <img src="img/member/icon-notification.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="icon-cart default-dot">
+                    <img src="img/member/icon-cart.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img-box">
+                        <img src="https://picsum.photos/50/50?random=3">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navigation">
+        <a href="" class="logo">
+            <img src="img/logo-white.svg" alt="">
+        </a>
+        <ul>
+            <li class="list active">
+                <div class="img-box">
+                    <img class="" src="img/member/icon-user-profile.svg" alt="">
+                    <img class="" src="img/member/icon-user-profile-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">個人資料</a>
+                    <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div>
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-badge.svg" alt="">
+                    <img src="img/member/icon-badge-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">我的點數</a>
+                    <!-- <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div> -->
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-coupon.svg" alt="">
+                    <img src="img/member/icon-coupon-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">優惠券</a>
+                    <!-- <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div> -->
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-order.svg" alt="">
+                    <img src="img/member/icon-order-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">訂單記錄</a>
+                    <!-- <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div> -->
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-favorite.svg" alt="">
+                    <img src="img/member/icon-favorite-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">追蹤清單</a>
+                    <!-- <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div> -->
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-home.svg" alt="">
+                    <img src="img/member/icon-home-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">返回首頁</a>
+                    <!-- <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div> -->
+                </div>
+            </li>
+        </ul>
+        <div class="copyright">
+            © 2022 Pres. Active Lab
+        </div>
+    </div>
+
+    <div class="member-container-box">
+        <div class="share-code-box">
+            <div class="code-item">
+                分享專屬推薦碼邀請朋友加入
+            </div>
+            <div class="code-item">
+                <input type="text" value="NCA758">
+            </div>
+            <div class="code-item">
+                <div class="more-btn black-btn">
+                    <a href="javascript:;">
+                        立即推薦好友
+                        <img src="img/icon-arrow-right.png" alt="">
+                        <img class="btn-black" src="img/icon-arrow-right-w.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="base-info-box">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">基本資料</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">我的肌膚狀況</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade base-info show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="sub-title">
+                        更新您的個人資訊
+                    </div>
+                    <div class="main-title">
+                        個人資料
+                    </div>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputText1">姓名</label>
+                                <input type="text" class="form-control" id="inputText1" value="梁靜宜">
+                            </div>
+                            <div class="form-group col-6 col-md-3">
+                                <label for="inputSex1">姓別</label>
+                                <input type="text" class="form-control" id="inputSex1" value="女性">
+                            </div><div class="form-group col-6 col-md-3">
+                                <label for="inputSex1">&nbsp;</label>
+                                <input type="text" class="form-control" id="inputSex1" value="男性">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputDate">生日</label>
+                                <input type="text" class="form-control" id="inputDate" value="1990/06/22" disabled>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPhone">手機號碼</label>
+                                <div class="input-box">
+                                    <img class="first" src="img/member/icon-phone.svg" alt="">
+                                    <input type="text" class="form-control" id="inputPhone">
+                                </div>
+                                <small class="verify-status is-ok">驗證完成</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">電子信箱</label>
+                            <div class="input-box">
+                                <img class="first" src="img/member/icon-mail.svg" alt="">
+                                <input type="text" class="form-control" id="inputEmail" value="alexaandriana@gmail.com" disabled>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword1">密碼</label>
+                                <div class="input-box">
+                                    <img class="first" src="img/member/icon-lock.svg" alt="">
+                                    <img class="last" src="img/login/icon-eye.svg" alt="">
+                                    <input type="password" class="form-control" id="inputPassword1" value="******">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword2">確認密碼</label>
+                                <div class="input-box">
+                                    <img class="first" src="img/member/icon-lock.svg" alt="">
+                                    <img class="last" src="img/login/icon-eye-slash.svg" alt="">
+                                    <input type="text" class="form-control" id="inputPassword2" value="123456">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <div class="more-btn black-btn">
+                                <a href="javascript:;">
+                                    確認更新
+                                    <img src="img/icon-arrow-right.png" alt="">
+                                    <img class="btn-black" src="img/icon-arrow-right-w.png" alt="">
+                                </a>
+                            </div>
+                            <div class="more-btn">
+                                <a href="javascript:;">
+                                    取消
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane skin-status-info fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="my-skin-wrapper">
+                        <div class="my-skin-info">
+                            <div class="my-skin-box">
+                                <div class="skin-list">
+                                    <div class="skin-item score80">
+                                        <div class="skin-name">
+                                            <span>81</span>
+                                            <span>膚色不均</span>
+                                        </div>
+                                        <div class="skin-score full">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skin-item score70">
+                                        <div class="skin-name">
+                                            <span>70</span>
+                                            <span>毛孔</span>
+                                        </div>
+                                        <div class="skin-score three">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skin-item score80">
+                                        <div class="skin-name">
+                                            <span>92</span>
+                                            <span>斑點</span>
+                                        </div>
+                                        <div class="skin-score full">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skin-item score80">
+                                        <div class="skin-name">
+                                            <span>96</span>
+                                            <span>光滑度</span>
+                                        </div>
+                                        <div class="skin-score full">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skin-list">
+                                    <img src="img/member/my-skin.svg" alt="">
+                                </div>
+                                <div class="skin-list">
+                                    <div class="skin-item score80">
+                                        <div class="skin-name">
+                                            <span>82</span>
+                                            <span>泛紅</span>
+                                        </div>
+                                        <div class="skin-score full">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skin-item score80">
+                                        <div class="skin-name">
+                                            <span>82</span>
+                                            <span>痘痘</span>
+                                        </div>
+                                        <div class="skin-score full">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skin-item score80">
+                                        <div class="skin-name">
+                                            <span>83</span>
+                                            <span>皺細紋</span>
+                                        </div>
+                                        <div class="skin-score full">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skin-item score59">
+                                        <div class="skin-name">
+                                            <span>45</span>
+                                            <span>黑眼圈</span>
+                                        </div>
+                                        <div class="skin-score two">
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                            <div class="score"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-skin-year">
+                                <div class="skin-item"><span> 肌齡</span> <span>25</span></div>
+                                <div class="skin-status">
+                                    <span>非常敏感</span>/<span>油性</span>/<span>純素顏</span>
+                                </div>
+                            </div>
+                            <div class="total-score-box">
+                                <div class="total-title">
+                                    <div class="title-item">總分</div>
+                                    <div class="title-item">82</div>
+                                    <div class="title-item">
+                                        <img src="img/icon-arrow.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-score-step score80">
+                                <div class="score-step-item">
+                                    <div class="bar"></div>
+                                    很不好
+                                </div>
+                                <div class="score-step-item">
+                                    <div class="bar"></div>
+                                    不好
+                                </div>
+                                <div class="score-step-item">
+                                    <div class="bar"></div>
+                                    平均
+                                </div>
+                                <div class="score-step-item">
+                                    <div class="bar"></div>
+                                    好
+                                </div>
+                                <div class="score-step-item">
+                                    <div class="bar"></div>
+                                    很好
+                                </div>
+                            </div>
+                            <div class="conclusion-box">
+                                <div class="conclusion-title">
+                                    <span>總結</span>
+                                    <span>檢測日期：2021/12/29</span>
+                                </div>
+                                <div class="conclusion-desc">
+                                    你的整體肌膚狀況優於同年齡平均，恭喜你! 請繼續保持，建議你仍可搭配我們推薦給你專屬護膚計畫與保養品，讓你達到完美膚質。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-skin-detail-info">
+                            <div class="my-skin-detail-box">
+                                <div class="my-skin-detail-item danger">
+                                    <div class="detail-title">重度肌膚問題</div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-dark-circles.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>黑眼圈</p>
+                                                <span>45</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            不好
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-skin-detail-box">
+                                <div class="my-skin-detail-item warning">
+                                    <div class="detail-title">中度肌膚問題</div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-pores.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>毛孔</p>
+                                                <span>70</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>保濕補水、舒緩修復、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            平均
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-skin-detail-box">
+                                <div class="my-skin-detail-item">
+                                    <div class="detail-title">良好膚況</div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-uneven.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>膚色不均</p>
+                                                <span>81</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            很好
+                                        </div>
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-flushed.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>泛紅</p>
+                                                <span>82</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            很好
+                                        </div>
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-acne.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>痘痘</p>
+                                                <span>82</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            很好
+                                        </div>
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-spot.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>斑點</p>
+                                                <span>92</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            很好
+                                        </div>
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-wrinkle.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>皺細紋</p>
+                                                <span>83</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            很好
+                                        </div>
+                                    </div>
+                                    <div class="detail-content">
+                                        <div class="content-item">
+                                            <img src="img/member/icon-smooth.svg" alt="">
+                                        </div>
+                                        <div class="content-item">
+                                            <div class="item-score">
+                                                <p>光滑度</p>
+                                                <span>96</span>
+                                            </div>
+                                            <div class="item-desc">
+                                                <span>護膚方案</span>：<span>美白去斑、保濕補水、紫外線防護</span>
+                                            </div>
+                                        </div>
+                                        <div class="content-item">
+                                            很好
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-personalize-info">
+                            <div class="my-personalize-box border-gray">
+                                <div class="my-personalize-desc">
+                                    <div class="desc-title">
+                                        <p>我的個人化保養品</p>
+                                    </div>
+                                    <div class="desc-info">
+                                        <p>針對此肌膚問題，建議搭配具有效活性成分的保養產品，依據你的肌膚狀況，我們提供了個人化的專屬保養建議。</p>
+                                    </div>
+                                </div>
+                                <div class="my-personalize-products-list">
+                                    <div class="my-personalize-products-item">
+                                        <div class="item">
+                                            <img src="img/cart/cart-img-default-0.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                維他命A胜肽極效青春精華 A18 20ml
+                                            </div>
+                                            <div class="item-desc">
+                                                以四重活性保濕成分，使肌膚涵水力瞬間激升，同時加強鞏固天然保水屏障。
+                                            </div>
+                                            <div class="item-star">
+                                                <span>★</span>4.9 (22人評分)
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-progress">
+                                                <div class="svg-box">
+                                                    <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-container-background" r="16" cx="16" cy="16"></circle>
+                                                        <circle class="circle-container-progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 27"></circle>
+                                                    </svg>
+                                                    <div class="progress-score"><span>73</span>%</div>
+                                                </div>
+                                                <p>適配度</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-personalize-products-item">
+                                        <div class="item">
+                                            <img src="img/cart/cart-img-default-0.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                維他命A胜肽極效青春精華 A18 20ml
+                                            </div>
+                                            <div class="item-desc">
+                                                以四重活性保濕成分，使肌膚涵水力瞬間激升，同時加強鞏固天然保水屏障。
+                                            </div>
+                                            <div class="item-star">
+                                                <span>★</span>4.9 (22人評分)
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-progress">
+                                                <div class="svg-box">
+                                                    <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-container-background" r="16" cx="16" cy="16"></circle>
+                                                        <circle class="circle-container-progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 27"></circle>
+                                                    </svg>
+                                                    <div class="progress-score"><span>73</span>%</div>
+                                                </div>
+                                                <p>適配度</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-personalize-products-item">
+                                        <div class="item">
+                                            <img src="img/cart/cart-img-default-0.png" alt="">
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-title">
+                                                維他命A胜肽極效青春精華 A18 20ml
+                                            </div>
+                                            <div class="item-desc">
+                                                以四重活性保濕成分，使肌膚涵水力瞬間激升，同時加強鞏固天然保水屏障。
+                                            </div>
+                                            <div class="item-star">
+                                                <span>★</span>4.9 (22人評分)
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-progress">
+                                                <div class="svg-box">
+                                                    <svg class="circle-container" viewBox="2 -2 28 36" xmlns="http://www.w3.org/2000/svg">
+                                                        <circle class="circle-container-background" r="16" cx="16" cy="16"></circle>
+                                                        <circle class="circle-container-progress" r="16" cx="16" cy="16" style="stroke-dashoffset: 27"></circle>
+                                                    </svg>
+                                                    <div class="progress-score"><span>73</span>%</div>
+                                                </div>
+                                                <p>適配度</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="test-my-skin-box">
+                                <div class="test-item">
+                                    <p>再次測膚<br>了解即時膚況</p>
+                                    <a href="">開啟APP</a>
+                                </div>
+                                <div class="test-item">
+                                    <img src="img/member/QRCODE.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/member.js"></script>
+    
+</body>
+</html>

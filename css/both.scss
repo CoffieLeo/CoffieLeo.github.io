@@ -52,7 +52,7 @@ body{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        padding: 5px 20px 5px 30px;
+        padding: 5px 20px;
         border: 1px solid #1E1E1E;
         font-size: 14px;
         text-decoration: none;
@@ -96,6 +96,99 @@ body{
         img{
             display: none;
             &.btn-black{
+                display: block;
+            }
+        }
+    }
+}
+
+.border-gray{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    padding: 25px;
+}
+
+.sub-menu-item{
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    a{
+        display: flex;
+        align-items: center;
+        line-height: 1;
+        text-decoration: none;
+    }
+    &.search-box, &.choice-lang{
+        @media screen and (max-width: 890px) {
+            display: none;
+        }
+    }
+    &.choice-lang{
+        .lang-box{
+            border-radius: 3px;
+            overflow: hidden;
+            a{
+                display: block;
+                padding: 16px;
+                &:hover{
+                    background-color: #1E1E1E;
+                    color: white;
+                }
+            }
+        }
+    }
+    &.shopping-cart{
+        .dropdown{
+            .dropdown-box{
+                min-width: 375px;
+                @media screen and (max-width: 890px) {
+                    top: unset;
+                    position: fixed;
+                    bottom: 0;
+                }
+            }
+        }
+        .cart-btn{
+            position: relative;
+            &:after{
+                content: '';
+                width: 5px;
+                height: 5px;
+                border-radius: 100%;
+                background-color: red;
+                position: absolute;
+                top: 0;
+                right: 3px;
+                display: none;
+
+            }
+            &.is-shopping{
+                &:after{
+                    display: block;
+                }
+            }
+        }
+    }
+    .dropdown{
+        position: relative;
+        button{
+            display: flex;
+            align-items: center;
+            background: transparent;
+            border: none;
+            font-size: 12px;
+        }
+        .lang-box{
+            position: absolute;
+            top: 25px;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,.2);
+            display: none;
+            width: 100%;
+            min-width: 100px;
+            z-index: 10;
+            &.active{
                 display: block;
             }
         }
@@ -210,92 +303,6 @@ header{
             justify-content: flex-end;
             @media screen and (max-width: 1440px) {
                 order: 3;
-            }
-            .sub-menu-item{
-                margin: 0 8px;
-                display: flex;
-                align-items: center;
-                a{
-                    display: flex;
-                    align-items: center;
-                    line-height: 1;
-                    text-decoration: none;
-                }
-                &.search-box, &.choice-lang{
-                    @media screen and (max-width: 890px) {
-                        display: none;
-                    }
-                }
-                &.choice-lang{
-                    .lang-box{
-                        border-radius: 3px;
-                        overflow: hidden;
-                        a{
-                            display: block;
-                            padding: 16px;
-                            &:hover{
-                                background-color: #1E1E1E;
-                                color: white;
-                            }
-                        }
-                    }
-                }
-                &.shopping-cart{
-                    .dropdown{
-                        .dropdown-box{
-                            min-width: 375px;
-                            @media screen and (max-width: 890px) {
-                                top: unset;
-                                position: fixed;
-                                bottom: 0;
-                            }
-                        }
-                    }
-                    .cart-btn{
-                        position: relative;
-                        &:after{
-                            content: '';
-                            width: 5px;
-                            height: 5px;
-                            border-radius: 100%;
-                            background-color: red;
-                            position: absolute;
-                            top: 0;
-                            right: 3px;
-                            display: none;
-
-                        }
-                        &.is-shopping{
-                            &:after{
-                                display: block;
-                            }
-                        }
-                    }
-                }
-                .dropdown{
-                    position: relative;
-                    button{
-                        display: flex;
-                        align-items: center;
-                        background: transparent;
-                        border: none;
-                        font-size: 12px;
-                    }
-                    .lang-box{
-                        position: absolute;
-                        top: 25px;
-                        right: 0;
-                        background-color: white;
-                        box-shadow: 0 0 10px rgba(0,0,0,.2);
-                        display: none;
-                        width: 100%;
-                        min-width: 100px;
-                        z-index: 10;
-                        &.active{
-                            display: block;
-                        }
-                    }
-                }
             }
             input{
                 border: none;
