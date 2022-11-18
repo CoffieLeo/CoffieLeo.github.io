@@ -140,7 +140,8 @@ ul.member-menu-box li img.arrow {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow-y: auto;
+  overflow-y: hidden;
+  overflow-x: auto;
   padding-right: 40px;
 }
 

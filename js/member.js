@@ -33,3 +33,25 @@ var swiper = new Swiper(".menuSwiper", {
     // spaceBetween: 30,
     // centeredSlides: true,
 });
+
+// get mobile menu position
+// var mobileLists = document.querySelectorAll(".mobile-member-menu-slider .list"),
+//     positions = [];
+
+// Array.prototype.forEach.call(mobileLists, function (list) {
+//     var positionInfo = list.getBoundingClientRect();
+
+//     positions.push(Math.floor(positionInfo.left));
+//     console.log("x:" + Math.floor(positionInfo.left));
+// });
+
+// let scrollElement = document.querySelector("#scroll-element");
+// let test = document.querySelectorAll('.mobile-member-menu-slider .list');
+// function changePosition(){
+//     test.forEach(function(item, index){
+//         scrollElement.scrollLeft +=  25;
+//     })
+//     console.log(positions);
+// }
+// test.forEach((item) => item.addEventListener('click', changePosition));
+
