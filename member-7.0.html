@@ -12,8 +12,9 @@
 </head>
 <body>
 
+    <!-- for Desktop header -->
     <div class="member-header-box">
-        <ul>
+        <ul class="member-menu-box">
             <li>
                 <div class="sub-menu-item choice-lang">
                     <div class="dropdown">
@@ -47,11 +48,106 @@
         </ul>
     </div>
 
+    <!-- for Mobile header -->
+    <div class="navigation-mobile">
+        <div class="header-top">
+            <a class="logo" href="">
+                <img src="img/logo-white.svg" alt="">
+            </a>
+            <ul class="member-menu-box">
+                <li>
+                    <a href="">
+                        <img src="img/member/icon-home-white.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="icon-notification default-dot red-dot">
+                        <img src="img/member/icon-notification-white.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="icon-cart default-dot">
+                        <img src="img/member/icon-cart-white.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img-box">
+                            <img src="https://picsum.photos/50/50?random=3">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-member-menu-slider">
+            <ul class="navigation-ul">
+                <li class="list active">
+                    <div class="img-box">
+                        <img class="" src="img/member/icon-user-profile.svg" alt="">
+                        <img class="" src="img/member/icon-user-profile-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">個人資料</a>
+                        <div class="sub-nav">
+                            <a href="" class="active">- 基本資料</a>
+                            <a href="">- 我的肌膚狀況</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-badge.svg" alt="">
+                        <img src="img/member/icon-badge-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">我的點數</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-coupon.svg" alt="">
+                        <img src="img/member/icon-coupon-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">優惠券</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-order.svg" alt="">
+                        <img src="img/member/icon-order-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">訂單記錄</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-favorite.svg" alt="">
+                        <img src="img/member/icon-favorite-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">追蹤清單</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-home.svg" alt="">
+                        <img src="img/member/icon-home-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">返回首頁</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="navigation">
         <a href="" class="logo">
             <img src="img/logo-white.svg" alt="">
         </a>
-        <ul>
+        <ul class="navigation-ul">
             <li class="list active">
                 <div class="img-box">
                     <img class="" src="img/member/icon-user-profile.svg" alt="">
@@ -72,10 +168,6 @@
                 </div>
                 <div class="nav-link-box">
                     <a href="#" class="main-nav">我的點數</a>
-                    <!-- <div class="sub-nav">
-                        <a href="" class="active">- 基本資料</a>
-                        <a href="">- 我的肌膚狀況</a>
-                    </div> -->
                 </div>
             </li>
             <li class="list">
@@ -85,10 +177,6 @@
                 </div>
                 <div class="nav-link-box">
                     <a href="#" class="main-nav">優惠券</a>
-                    <!-- <div class="sub-nav">
-                        <a href="" class="active">- 基本資料</a>
-                        <a href="">- 我的肌膚狀況</a>
-                    </div> -->
                 </div>
             </li>
             <li class="list">
@@ -98,10 +186,6 @@
                 </div>
                 <div class="nav-link-box">
                     <a href="#" class="main-nav">訂單記錄</a>
-                    <!-- <div class="sub-nav">
-                        <a href="" class="active">- 基本資料</a>
-                        <a href="">- 我的肌膚狀況</a>
-                    </div> -->
                 </div>
             </li>
             <li class="list">
@@ -111,10 +195,6 @@
                 </div>
                 <div class="nav-link-box">
                     <a href="#" class="main-nav">追蹤清單</a>
-                    <!-- <div class="sub-nav">
-                        <a href="" class="active">- 基本資料</a>
-                        <a href="">- 我的肌膚狀況</a>
-                    </div> -->
                 </div>
             </li>
             <li class="list">
@@ -124,10 +204,6 @@
                 </div>
                 <div class="nav-link-box">
                     <a href="#" class="main-nav">返回首頁</a>
-                    <!-- <div class="sub-nav">
-                        <a href="" class="active">- 基本資料</a>
-                        <a href="">- 我的肌膚狀況</a>
-                    </div> -->
                 </div>
             </li>
         </ul>

@@ -26,3 +26,10 @@ window.onclick = function(event) {
         }
     }
 }
+
+// mobile header menu
+var swiper = new Swiper(".menuSwiper", {
+    slidesPerView: 'auto',
+    // spaceBetween: 30,
+    // centeredSlides: true,
+});
