@@ -114,7 +114,7 @@ ul.member-menu-box li img.arrow {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px 20px 0;
+  padding: 15px 20px;
 }
 
 .navigation-mobile .logo {
@@ -135,12 +135,13 @@ ul.member-menu-box li img.arrow {
 }
 
 .navigation-mobile ul.navigation-ul {
-  margin-top: 15px;
+  margin-top: 0px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   overflow-y: auto;
+  padding-right: 40px;
 }
 
 .navigation-mobile ul.navigation-ul li {
@@ -149,6 +150,9 @@ ul.member-menu-box li img.arrow {
       -ms-flex: none;
           flex: none;
   padding: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation-mobile ul.navigation-ul li:before, .navigation-mobile ul.navigation-ul li:after {
@@ -192,6 +196,7 @@ ul.member-menu-box li img.arrow {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
   border-bottom-left-radius: 0;
+  margin-bottom: -1px;
 }
 
 .navigation-mobile ul.navigation-ul li.active:before, .navigation-mobile ul.navigation-ul li.active:after {
@@ -233,8 +238,6 @@ ul.member-menu-box li img.arrow {
 }
 
 .navigation-mobile ul.navigation-ul li .sub-nav {
-  position: absolute;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

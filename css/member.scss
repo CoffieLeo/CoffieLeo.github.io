@@ -93,7 +93,7 @@ ul{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px 0;
+        padding: 15px 20px;
     }
     .logo{
         display: block;
@@ -118,13 +118,15 @@ ul{
             }
         }
         &.navigation-ul{
-            margin-top: 15px;
+            margin-top: 0px;
             flex-direction: row;
             overflow-y: auto;
+            padding-right: 40px;
             li{
                 width: 150px;
                 flex: none;
                 padding: 10px 20px;
+                align-items: center;
                 &:before, &:after{
                     right: unset;
                     bottom: 0;
@@ -159,6 +161,7 @@ ul{
                     border-top-left-radius: 7px;
                     border-top-right-radius: 7px;
                     border-bottom-left-radius: 0;
+                    margin-bottom: -1px;
                     &:before, &:after{
                         transform: scale(1);
                     }
@@ -194,8 +197,6 @@ ul{
                     }
                 }
                 .sub-nav{
-                    position: absolute;
-                    width: 100%;
                     flex-direction: row;
                     a{
                         white-space: nowrap;
