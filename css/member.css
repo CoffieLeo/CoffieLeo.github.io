@@ -143,6 +143,11 @@ ul.member-menu-box li img.arrow {
   overflow-y: hidden;
   overflow-x: auto;
   padding-right: 40px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navigation-mobile ul.navigation-ul::-webkit-scrollbar {
+  display: none;
 }
 
 .navigation-mobile ul.navigation-ul li {
@@ -158,7 +163,7 @@ ul.member-menu-box li img.arrow {
 
 .navigation-mobile ul.navigation-ul li:before, .navigation-mobile ul.navigation-ul li:after {
   right: unset;
-  bottom: 0;
+  bottom: 1px;
 }
 
 .navigation-mobile ul.navigation-ul li:before {

@@ -123,6 +123,10 @@ ul{
             overflow-y: hidden;
             overflow-x: auto;
             padding-right: 40px;
+            -webkit-overflow-scrolling: touch;
+            &::-webkit-scrollbar {
+                display: none;
+            }
             li{
                 width: 150px;
                 flex: none;
@@ -130,7 +134,7 @@ ul{
                 align-items: center;
                 &:before, &:after{
                     right: unset;
-                    bottom: 0;
+                    bottom: 1px;
                 }
                 &:before{
                     top: unset;
