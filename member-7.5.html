@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>member 7.5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/both.css">
+    <link rel="stylesheet" href="css/member.css">
+</head>
+<body class="gray-bg">
+    <!-- for Desktop header -->
+    <div class="member-header-box">
+        <ul class="member-menu-box">
+            <li>
+                <div class="sub-menu-item choice-lang">
+                    <div class="dropdown">
+                        <button class="lang-btn" onclick="chooseLang()">
+                            TW<img class="arrow" src="img/icon-arrow.png" alt="">
+                        </button>
+                        <!-- add active to show -->
+                        <div id="langDropdown" class="dropdown-box lang-box">
+                            <a href="#">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="" class="icon-notification default-dot red-dot">
+                    <img src="img/member/icon-notification.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="" class="icon-cart default-dot">
+                    <img src="img/member/icon-cart.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="img-box">
+                        <img src="https://picsum.photos/50/50?random=3">
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- for Mobile header -->
+    <div class="navigation-mobile">
+        <div class="header-top">
+            <a class="logo" href="">
+                <img src="img/logo-white.svg" alt="">
+            </a>
+            <ul class="member-menu-box">
+                <li>
+                    <a href="">
+                        <img src="img/member/icon-home-white.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="icon-notification default-dot red-dot">
+                        <img src="img/member/icon-notification-white.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="icon-cart default-dot">
+                        <img src="img/member/icon-cart-white.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="img-box">
+                            <img src="https://picsum.photos/50/50?random=3">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile-member-menu-slider">
+            <ul id="scroll-element" class="navigation-ul">
+                <li class="list">
+                    <div class="img-box">
+                        <img class="" src="img/member/icon-user-profile.svg" alt="">
+                        <img class="" src="img/member/icon-user-profile-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">個人資料</a>
+                        <!-- <div class="sub-nav">
+                            <a href="" class="active">- 基本資料</a>
+                            <a href="">- 我的肌膚狀況</a>
+                        </div> -->
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-badge.svg" alt="">
+                        <img src="img/member/icon-badge-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">我的點數</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-coupon.svg" alt="">
+                        <img src="img/member/icon-coupon-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">優惠券</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-order.svg" alt="">
+                        <img src="img/member/icon-order-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">訂單記錄</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-favorite.svg" alt="">
+                        <img src="img/member/icon-favorite-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">追蹤清單</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <div class="img-box">
+                        <img src="img/member/icon-home.svg" alt="">
+                        <img src="img/member/icon-home-gray.svg" alt="">
+                    </div>
+                    <div class="nav-link-box">
+                        <a href="#" class="main-nav">返回首頁</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <a href="" class="logo">
+            <img src="img/logo-white.svg" alt="">
+        </a>
+        <ul class="navigation-ul">
+            <li class="list">
+                <div class="img-box">
+                    <img class="" src="img/member/icon-user-profile.svg" alt="">
+                    <img class="" src="img/member/icon-user-profile-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">個人資料</a>
+                    <div class="sub-nav">
+                        <a href="" class="active">- 基本資料</a>
+                        <a href="">- 我的肌膚狀況</a>
+                    </div>
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-badge.svg" alt="">
+                    <img src="img/member/icon-badge-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">我的點數</a>
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-coupon.svg" alt="">
+                    <img src="img/member/icon-coupon-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">優惠券</a>
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-order.svg" alt="">
+                    <img src="img/member/icon-order-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">訂單記錄</a>
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-favorite.svg" alt="">
+                    <img src="img/member/icon-favorite-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">追蹤清單</a>
+                </div>
+            </li>
+            <li class="list">
+                <div class="img-box">
+                    <img src="img/member/icon-home.svg" alt="">
+                    <img src="img/member/icon-home-gray.svg" alt="">
+                </div>
+                <div class="nav-link-box">
+                    <a href="#" class="main-nav">返回首頁</a>
+                </div>
+            </li>
+        </ul>
+        <div class="copyright">
+            © 2022 Pres. Active Lab
+        </div>
+    </div>
+
+    <div class="member-container-box">
+        <div class="notification-container-box">
+            <div class="title">
+                通知中心 
+            </div>
+            <div class="notification-collapse-box">
+                <div class="collapse-list">
+                    <a class="collapse-ctrl" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="date-box">
+                            2022/10/18
+                        </div>
+                        <div class="collapse-preview">
+                            <div class="preview-title">🤔一瓶抵多瓶！？今日好文讓醫師帶你破解一瓶多效迷思！🎉 <img src="img/icon-arrow.png" alt=""></div>
+                            <div class="preview-content">
+                                不知道大家是否對以下的廣告宣稱似曾相似:「冠軍神水」、「可以當卸粧、清潔、化粧水、保濕乳液使用（四效合一）」。
+                            </div>
+                        </div>
+                        <img src="img/icon-arrow.png" alt="">
+                    </a>
+                    <div class="collapse show" id="collapseExample1">
+                        <div class="card card-body">
+                            <div class="img-box">
+                                <img src="https://picsum.photos/860/456?random=15">
+                            </div>
+                            <div class="member-info">
+                                <div class="img-box">
+                                    <img src="https://picsum.photos/860/456?random=6">
+                                </div>
+                                <div class="member-item">
+                                    <div class="name">發佈者名稱</div>
+                                    <div class="date">2022/10/18</div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <p>不知道大家是否對以下的廣告宣稱似曾相似:「冠軍神水」、「可以當卸粧、清潔、化粧水、保濕乳液使用（四效合一）」。乍看之下真的好厲害啊！但世界上真的有這樣的產品嗎？食藥署特別邀請邱品齊醫師為大家解答。其實只要一窺卸粧水產品的成分表就會發現，如此的宣稱已經誇大不實，因為這些宣稱「神水」的產品本身就只是單純的卸粧水，實在沒有這麼多的功能。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse-list">
+                    <a class="collapse-ctrl collapsed" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="date-box">
+                            2022/10/18
+                        </div>
+                        <div class="collapse-preview">
+                            <div class="preview-title">🤔一瓶抵多瓶！？今日好文讓醫師帶你破解一瓶多效迷思！🎉<img src="img/icon-arrow.png" alt=""></div>
+                            <div class="preview-content">
+                                不知道大家是否對以下的廣告宣稱似曾相似:「冠軍神水」、「可以當卸粧、清潔、化粧水、保濕乳液使用（四效合一）」。
+                            </div>
+                        </div>
+                        <img src="img/icon-arrow.png" alt="">
+                    </a>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <div class="img-box">
+                                <img src="https://picsum.photos/860/456?random=15">
+                            </div>
+                            <div class="member-info">
+                                <div class="img-box">
+                                    <img src="https://picsum.photos/860/456?random=6">
+                                </div>
+                                <div class="member-item">
+                                    <div class="name">發佈者名稱</div>
+                                    <div class="date">2022/10/18</div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <p>不知道大家是否對以下的廣告宣稱似曾相似:「冠軍神水」、「可以當卸粧、清潔、化粧水、保濕乳液使用（四效合一）」。乍看之下真的好厲害啊！但世界上真的有這樣的產品嗎？食藥署特別邀請邱品齊醫師為大家解答。其實只要一窺卸粧水產品的成分表就會發現，如此的宣稱已經誇大不實，因為這些宣稱「神水」的產品本身就只是單純的卸粧水，實在沒有這麼多的功能。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse-list">
+                    <a class="collapse-ctrl collapsed" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="date-box">
+                            2022/10/18
+                        </div>
+                        <div class="collapse-preview">
+                            <div class="preview-title">🤔一瓶抵多瓶！？今日好文讓醫師帶你破解一瓶多效迷思！🎉<img src="img/icon-arrow.png" alt=""></div>
+                            <div class="preview-content">
+                                不知道大家是否對以下的廣告宣稱似曾相似:「冠軍神水」、「可以當卸粧、清潔、化粧水、保濕乳液使用（四效合一）」。
+                            </div>
+                        </div>
+                        <img src="img/icon-arrow.png" alt="">
+                    </a>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <div class="img-box">
+                                <img src="https://picsum.photos/860/456?random=15">
+                            </div>
+                            <div class="member-info">
+                                <div class="img-box">
+                                    <img src="https://picsum.photos/860/456?random=6">
+                                </div>
+                                <div class="member-item">
+                                    <div class="name">發佈者名稱</div>
+                                    <div class="date">2022/10/18</div>
+                                </div>
+                            </div>
+                            <div class="member-desc">
+                                <p>不知道大家是否對以下的廣告宣稱似曾相似:「冠軍神水」、「可以當卸粧、清潔、化粧水、保濕乳液使用（四效合一）」。乍看之下真的好厲害啊！但世界上真的有這樣的產品嗎？食藥署特別邀請邱品齊醫師為大家解答。其實只要一窺卸粧水產品的成分表就會發現，如此的宣稱已經誇大不實，因為這些宣稱「神水」的產品本身就只是單純的卸粧水，實在沒有這麼多的功能。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loading-box">
+            <img src="img/icon-loading.svg" alt="">
+        </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="js/member.js"></script>
+    
+</body>
+</html>

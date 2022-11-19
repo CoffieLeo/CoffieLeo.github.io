@@ -8,7 +8,6 @@ function activeLink(){
 list.forEach((item) =>
 item.addEventListener('click', activeLink));
 
-
 // chooseLang
 function chooseLang() {
     document.getElementById("langDropdown").classList.toggle("active");
@@ -55,3 +54,18 @@ var swiper = new Swiper(".menuSwiper", {
 // }
 // test.forEach((item) => item.addEventListener('click', changePosition));
 
+
+var swiper = new Swiper(".couponSwiper", {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    breakpoints: {
+        390: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        1920: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
