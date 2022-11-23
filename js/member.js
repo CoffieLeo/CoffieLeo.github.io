@@ -60,7 +60,7 @@ var swiper = new Swiper(".couponSwiper", {
     slidesPerView: 3,
     breakpoints: {
         390: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 20,
         },
         1920: {

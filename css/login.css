@@ -74,6 +74,7 @@
   color: #1E1E1E;
   opacity: .4;
   text-align: left;
+  margin-bottom: 15px;
 }
 
 .login-container-box .login-box label.form-check-label {
@@ -156,8 +157,10 @@
 }
 
 .login-container-box .login-box p.opacity {
+  display: block;
   font-size: 13px;
   opacity: 0.5;
+  padding-bottom: 30px;
 }
 
 .login-container-box .login-box p.opacity a {
@@ -210,6 +213,10 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.login-container-box .login-box .more-btn {
+  margin-top: 20px;
 }
 
 .login-container-box .login-info-box {

@@ -865,6 +865,23 @@ footer{
                     }
                 }
             }
+            .remove-btn{
+                color: #7C7C7C !important;
+                border-color: #7C7C7C !important;
+                span{
+                    color: #7C7C7C;
+                    @media screen and (max-width: 576px) {
+                        display: none;
+                    }
+                }
+                img{
+                    display: none;
+                    @media screen and (max-width: 576px) {
+                        display: block;
+                        opacity: .5;
+                    }
+                }
+            }
             img{
                 width: 16px;
             }

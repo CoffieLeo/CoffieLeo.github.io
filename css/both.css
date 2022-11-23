@@ -1177,6 +1177,32 @@ footer .copyright-box .copyright-item ul li a {
   display: block;
 }
 
+.product-item-info .info-item.info-btn .remove-btn {
+  color: #7C7C7C !important;
+  border-color: #7C7C7C !important;
+}
+
+.product-item-info .info-item.info-btn .remove-btn span {
+  color: #7C7C7C;
+}
+
+@media screen and (max-width: 576px) {
+  .product-item-info .info-item.info-btn .remove-btn span {
+    display: none;
+  }
+}
+
+.product-item-info .info-item.info-btn .remove-btn img {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .product-item-info .info-item.info-btn .remove-btn img {
+    display: block;
+    opacity: .5;
+  }
+}
+
 .product-item-info .info-item.info-btn img {
   width: 16px;
 }
