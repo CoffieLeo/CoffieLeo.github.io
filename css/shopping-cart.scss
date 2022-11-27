@@ -9,10 +9,10 @@
     .non-member-box{
         display: none !important;
     }
-    .choose-free-box, .choose-coupon-box, .use-coupon, .use-point{
+    .choose-free-box, .choose-coupon-box{
         display: block !important;
     }
-    .custom-point{
+    .custom-point, .use-coupon, .use-point{
         display: flex !important;
     }
     .free-box, .use-coupon-box{
@@ -208,9 +208,10 @@
         justify-content: space-between;
         font-size: 12px;
         margin-bottom: 1rem;
-        // @media screen and (max-width: 576px) {
-        //     justify-content: flex-start;
-        // }
+        .form-info-item{
+            display: inline-flex;
+            align-items: center;
+        }
         img{
             width: 12px;
             margin-right: 5px;
@@ -306,6 +307,8 @@
                 }
                 span{
                     width: 280px;
+                    font-size: 14px;
+                    font-weight: 500;
                     @media screen and (max-width: 576px) {
                         width: auto;
                         font-size: 14px;
@@ -366,6 +369,7 @@
                         .remove-item{
                             order: 1;
                             margin-left: auto;
+                            cursor: pointer;
                             @media screen and (max-width: 576px) {
                                 order: unset;
                             }
@@ -516,6 +520,7 @@
             justify-content: space-between;
             opacity: .5;
             pointer-events: none;
+            cursor: pointer;
             @media screen and (max-width: 576px) {
                 border: none;
                 border-top: 5px solid #F8F9F9;
@@ -640,15 +645,17 @@
                     border: none;
                     text-align: right;
                     padding: 4px 10px;
-                    max-width: 120px;
+                    max-width: 80px;
                 }
                 button{
+                    flex: none;
+                    width: 40px;
                     border: 1px #1E1E1E solid;
                     border-radius: 3px;
                     padding: 2px 4px;
                     font-size: 12px;
                     color: #1E1E1E;
-                    margin-left: 5px;
+                    margin: 0 3px;
                 }
                 span{
                     color: red;
@@ -659,6 +666,13 @@
                     font-family: 'Plus Jakarta Sans', sans-serif;
                 }
             }
+        }
+        .coupon-info{
+            font-size: 12px;
+            font-weight: 400;
+            color: #979797;
+            margin-top: 10px;
+
         }
     }
 }
@@ -714,11 +728,18 @@
     }
 }
 
+.cart-custom{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.cart-top{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
 // 選擇試用品
 .choose-free-fixed{
-    .cart-top{
-        justify-content: center;
-    }
     .cart-custom{
         border-top: none;
     }
@@ -763,9 +784,6 @@
 
 // 優惠券列表
 .choose-coupon-fixed{
-    .cart-top{
-        justify-content: center;
-    }
     .cart-custom{
         border-top: none;
     }
@@ -807,9 +825,6 @@
 
 // 常用收件地址
 .choose-address-fixed{
-    .cart-top{
-        justify-content: center;
-    }
     .cart-custom{
         border-top: none;
         padding: 0;

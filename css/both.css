@@ -1216,6 +1216,7 @@ footer .copyright-box .copyright-item ul li a {
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   min-width: 100px;
+  min-height: 300px;
   z-index: 10;
   max-width: 375px;
   -webkit-transition: 1s all;
@@ -1298,9 +1299,7 @@ input[type='checkbox'] {
   bottom: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1308,6 +1307,12 @@ input[type='checkbox'] {
       -ms-flex-align: center;
           align-items: center;
   background-color: #1E1E1E;
+}
+
+.musk-box.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .musk-box .popup-info-box {
@@ -1361,6 +1366,69 @@ input[type='checkbox'] {
   display: -ms-flexbox;
   display: flex;
   padding: 10px 16px;
+}
+
+.musk-box .popup-info-box .musk-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.musk-box .popup-info-box .musk-body .img-box {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.musk-box .popup-info-box .musk-body .img-box img {
+  width: 100%;
+}
+
+.musk-box .popup-info-box .musk-body .info-box p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.musk-box .popup-info-box .musk-body .info-box .info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.musk-box .popup-info-box .musk-body .info-box .info-item img {
+  width: 12px;
+  margin-top: -3px;
+  margin-right: 3px;
+}
+
+.musk-box .popup-info-box .musk-body .info-box .info-item .item {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.musk-box .popup-info-box .musk-body .info-box .info-item .item span {
+  display: block;
+  color: #ff0000;
+}
+
+.musk-box .popup-info-box .ctrl-num-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.musk-box .popup-info-box .ctrl-num-box .num-ctrl-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
 }
 
 .coupon-box {
@@ -1836,5 +1904,21 @@ input[type='checkbox'] {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.coupon-rule-fixed ul li + li {
+  margin-top: 20px;
+}
+
+.coupon-rule-fixed ul li p:first-child {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.coupon-rule-fixed ul li p:last-child {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=both.css.map */

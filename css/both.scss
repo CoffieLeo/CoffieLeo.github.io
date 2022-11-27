@@ -902,6 +902,7 @@ footer{
     box-shadow: 0 0 10px rgba(0,0,0,.2);
     width: 100%;
     min-width: 100px;
+    min-height: 300px;
     z-index: 10;
     max-width: 375px;
     transition: 1s all;
@@ -964,10 +965,13 @@ input[type='checkbox'] {
     bottom: 0;
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #1E1E1E;
+    &.active{
+        display: flex;
+    }
     .popup-info-box{
         width: 360px;
         height: 310px;
@@ -1001,6 +1005,49 @@ input[type='checkbox'] {
             a{
                 display: flex;
                 padding: 10px 16px;
+            }
+        }
+        .musk-body{
+            display: flex;
+            .img-box{
+                width: 80px;
+                height: 80px;
+                margin-right: 10px;
+                img{
+                    width: 100%;
+                }
+            }
+            .info-box{
+                p{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+                .info-item{
+                    display: flex;
+                    align-items: flex-start;
+                    img{
+                        width: 12px;
+                        margin-top: -3px;
+                        margin-right: 3px;
+                    }
+                    .item{
+                        font-size: 12px;
+                        font-weight: 400;
+                        span{
+                            display: block;
+                            color: #ff0000;
+                        }
+                    }
+                }
+            }
+        }
+        .ctrl-num-box{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            .num-ctrl-item{
+                display: flex;
+                margin-left: 10px;
             }
         }
     }
@@ -1339,5 +1386,28 @@ input[type='checkbox'] {
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+// 優惠券使用說明
+.coupon-rule-fixed{
+    ul{
+        li{
+            +li{
+                margin-top: 20px;
+            }
+            p{
+                &:first-child{
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+                &:last-child{
+                    font-size: 12px;
+                    font-weight: 400;
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }

@@ -63,9 +63,22 @@ var swiper = new Swiper(".couponSwiper", {
             slidesPerView: 1.2,
             spaceBetween: 20,
         },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
         1920: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
     },
 });
+
+// toggleCouponInfoBox
+function openCouponInfoBox() {
+    document.querySelector('.coupon-rule-fixed').classList.add('active')
+}
+  
+function closeCouponInfoBox() {
+    document.querySelector('.coupon-rule-fixed').classList.remove('active')
+}

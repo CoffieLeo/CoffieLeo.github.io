@@ -1094,6 +1094,9 @@ ul{
         .coupon-box{
             height: 180px;
             .coupon-item{
+                &:before, &:after{
+                    background-color: #FBFBFB;
+                }
                 .item{
                     &:nth-child(3){
                         margin-top: auto;
@@ -1155,6 +1158,9 @@ ul{
                 }
             }
             .list-top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
                 padding: 50px 135px 15px;
                 border-bottom: 1px solid #E0E0E0;
                 margin-bottom: 40px;

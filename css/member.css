@@ -1326,6 +1326,10 @@ ul.navigation-ul li .sub-nav a.active {
   height: 180px;
 }
 
+.member-container-box .can-use-coupon-box .coupon-box .coupon-item:before, .member-container-box .can-use-coupon-box .coupon-box .coupon-item:after {
+  background-color: #FBFBFB;
+}
+
 .member-container-box .can-use-coupon-box .coupon-box .coupon-item .item:nth-child(3) {
   margin-top: auto;
 }
@@ -1403,6 +1407,15 @@ ul.navigation-ul li .sub-nav a.active {
 }
 
 .member-container-box .order-container-box .order-list .list-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 50px 135px 15px;
   border-bottom: 1px solid #E0E0E0;
   margin-bottom: 40px;

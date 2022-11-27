@@ -22,11 +22,20 @@ function closeCouponBox() {
     document.querySelector('.choose-coupon-fixed').classList.remove('active')
 }
 
-// toggleCouponBox
+// toggleAddressBox
 function openAddressBox() {
     document.querySelector('.choose-address-fixed').classList.add('active')
 }
   
 function closeAddressBox() {
     document.querySelector('.choose-address-fixed').classList.remove('active')
+}
+
+// toggleCouponInfoBox
+function openCouponInfoBox() {
+    document.querySelector('.coupon-rule-fixed').classList.add('active')
+}
+  
+function closeCouponInfoBox() {
+    document.querySelector('.coupon-rule-fixed').classList.remove('active')
 }

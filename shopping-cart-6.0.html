@@ -241,7 +241,7 @@
                                 </div>
                             </div>
                             <!-- 可使用優惠券 -->
-                            <div class="use-coupon-box border-gray">
+                            <div class="use-coupon-box border-gray" onclick="openCouponBox()">
                                 可使用優惠券
                                 <img src="img/arrow-right-b.svg" alt="">
                             </div>
@@ -270,10 +270,10 @@
                                         </div>
                                     </div>
                                     <div class="coupon-item">
-                                        <div class="user-type">
+                                        <div class="use-type">
                                             已使用
                                         </div>
-                                        <a href="" class="couopn-info">
+                                        <a href="javascript:;" class="couopn-info" onclick="openCouponInfoBox()">
                                             詳細說明 <img src="img/arrow-right.svg" alt="">
                                         </a>
                                     </div>
@@ -292,7 +292,8 @@
                                 <div class="form-group">
                                     <img src="img/icon-arrow.png" alt="">
                                     <select class="form-control" id="exampleFormControlSelect2">
-                                        <option>本島宅配 NT$90</option>
+                                        <option>本島宅配 NT$80</option>
+                                        <option>超商取貨 NT$80</option>
                                     </select>
                                 </div>
                             </div>
@@ -328,6 +329,7 @@
                                         本次使用<span>0</span>點，剩餘 <span>1000</span> 點
                                     </div>
                                 </div>
+                                <div class="coupon-info">訂單點數折抵上限為500點 ( 10點可折抵NT$1 )</div>
                             </div>
                         </div>
                     </div>
@@ -589,6 +591,34 @@
         </div>
         <div class="cart-footer">
             <button class="white-btn">取消</button>
+        </div>
+    </div>
+
+    <!-- 優惠券使用說明 -->
+    <div class="coupon-rule-fixed fixed-model">
+        <button class="close-btn" onclick="closeCouponInfoBox()">
+            <img src="img/close-btn.svg" alt="">
+        </button>
+        <div class="cart-box">
+            <div class="cart-top">
+                <div class="fixed-title">優惠券使用說明</div>
+            </div>
+        </div>
+        <div class="cart-box cart-custom">
+            <ul>
+                <li>
+                    <p>優惠內容</p>
+                    <p>全系列產品享8折優惠。</p>
+                </li>
+                <li>
+                    <p>使用期限</p>
+                    <p>2022/12/1 - 12/31</p>
+                </li>
+                <li>
+                    <p>使用條件</p>
+                    <p>最低消費800元方可享有優惠。</p>
+                </li>
+            </ul>
         </div>
     </div>
 

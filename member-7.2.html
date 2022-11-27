@@ -243,9 +243,9 @@
                             </div>
                             <div class="coupon-item">
                                 <div class="use-type is-use">
-                                    已選擇
+                                    適用商品
                                 </div>
-                                <a href="" class="couopn-info">
+                                <a href="javascript:;" class="couopn-info" onclick="openCouponInfoBox()">
                                     詳細說明 <img src="img/arrow-right.svg" alt="">
                                 </a>
                             </div>
@@ -268,9 +268,9 @@
                             </div>
                             <div class="coupon-item">
                                 <div class="use-type">
-                                    立即購買
+                                    適用商品
                                 </div>
-                                <a href="" class="couopn-info">
+                                <a href="javascript:;" class="couopn-info" onclick="openCouponInfoBox()">
                                     詳細說明 <img src="img/arrow-right.svg" alt="">
                                 </a>
                             </div>
@@ -293,9 +293,9 @@
                             </div>
                             <div class="coupon-item">
                                 <div class="use-type">
-                                    立即購買
+                                    適用商品
                                 </div>
-                                <a href="" class="couopn-info">
+                                <a href="javascript:;" class="couopn-info" onclick="openCouponInfoBox()">
                                     詳細說明 <img src="img/arrow-right.svg" alt="">
                                 </a>
                             </div>
@@ -341,9 +341,9 @@
                                             <!-- <div class="old-price">NT$1200</div> -->
                                         </div>
                                         <div class="info-item info-btn">
-                                            <button class="white-btn favorite-btn">
-                                                <img src="img/favorite-white.svg" alt="">
-                                                <img src="img/favorite-red.svg" alt="">
+                                            <button class="white-btn remove-btn">
+                                                <span>移除</span>
+                                                <img src="img/close-btn.svg" alt="">
                                             </button>
                                             <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                         </div>
@@ -367,9 +367,9 @@
                                             <div class="old-price">NT$1200</div>
                                         </div>
                                         <div class="info-item info-btn">
-                                            <button class="white-btn favorite-btn">
-                                                <img src="img/favorite-white.svg" alt="">
-                                                <img src="img/favorite-red.svg" alt="">
+                                            <button class="white-btn remove-btn">
+                                                <span>移除</span>
+                                                <img src="img/close-btn.svg" alt="">
                                             </button>
                                             <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                         </div>
@@ -393,9 +393,9 @@
                                             <!-- <div class="old-price">NT$1200</div> -->
                                         </div>
                                         <div class="info-item info-btn">
-                                            <button class="white-btn favorite-btn like-btn">
-                                                <img src="img/favorite-white.svg" alt="">
-                                                <img src="img/favorite-red.svg" alt="">
+                                            <button class="white-btn remove-btn">
+                                                <span>移除</span>
+                                                <img src="img/close-btn.svg" alt="">
                                             </button>
                                             <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                         </div>
@@ -419,9 +419,9 @@
                                             <!-- <div class="old-price">NT$1200</div> -->
                                         </div>
                                         <div class="info-item info-btn">
-                                            <button class="white-btn favorite-btn">
-                                                <img src="img/favorite-white.svg" alt="">
-                                                <img src="img/favorite-red.svg" alt="">
+                                            <button class="white-btn remove-btn">
+                                                <span>移除</span>
+                                                <img src="img/close-btn.svg" alt="">
                                             </button>
                                             <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                         </div>
@@ -443,10 +443,38 @@
                         <li>優惠券使用後，若取消訂單或辦理退貨時，優惠券仍在有效期限內，將歸還至會員帳戶；若優惠券已過期，則失效無法再次使用。</li>
                     </ul>
                     <div class="info">
-                        ※優惠券之贈送將依各活動之贈送機制有所調整，PRO ACTIVE LAB 保留會員參加活動資格及修改或變更之權利。
+                        ※優惠券之贈送將依各活動之贈送機制有所調整，PRES ACTIVE LAB 保留會員參加活動資格及修改或變更之權利。
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- 優惠券使用說明 -->
+    <div class="coupon-rule-fixed fixed-model">
+        <button class="close-btn" onclick="closeCouponInfoBox()">
+            <img src="img/close-btn.svg" alt="">
+        </button>
+        <div class="cart-box">
+            <div class="cart-top">
+                <div class="fixed-title">優惠券使用說明</div>
+            </div>
+        </div>
+        <div class="cart-box cart-custom">
+            <ul>
+                <li>
+                    <p>優惠內容</p>
+                    <p>全系列產品享8折優惠。</p>
+                </li>
+                <li>
+                    <p>使用期限</p>
+                    <p>2022/12/1 - 12/31</p>
+                </li>
+                <li>
+                    <p>使用條件</p>
+                    <p>最低消費800元方可享有優惠。</p>
+                </li>
+            </ul>
         </div>
     </div>
 
