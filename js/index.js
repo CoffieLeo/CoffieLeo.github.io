@@ -12,17 +12,26 @@ const proSwiper = new Swiper(".pro-swiper", {
     // effect: "fade",
 });
 
-const testSwiper = new Swiper('.swiper-test', {
-    navigation: {
-        nextEl: ".swiper-button-next",
-    },
-});
-
 const proSwiperMobile = new Swiper(".pro-swiper-mobile", {
     loop: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
+    },
+    centeredSlides: true,
+    breakpoints: {
+        390: {
+            slidesPerView: 1.2,
+            spaceBetween: 0,
+        },
+        1440: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        1920: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
     },
     // autoplay: {
     //     delay: 5000,

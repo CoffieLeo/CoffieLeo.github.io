@@ -820,6 +820,10 @@ ul.navigation-ul li .sub-nav a.active {
   }
 }
 
+.member-container-box .my-skin-box .skin-list .skin-item .skin-name span {
+  font-weight: 600;
+}
+
 .member-container-box .my-skin-box .skin-list .skin-item .skin-score {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1153,7 +1157,7 @@ ul.navigation-ul li .sub-nav a.active {
 
 .member-container-box .my-personalize-box .my-personalize-products-list .my-personalize-products-item .item .item-title {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .member-container-box .my-personalize-box .my-personalize-products-list .my-personalize-products-item .item .item-desc {
@@ -1184,6 +1188,10 @@ ul.navigation-ul li .sub-nav a.active {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.member-container-box .my-personalize-box .my-personalize-products-list .my-personalize-products-item .item .item-progress .svg-box span {
+  font-weight: 600;
 }
 
 .member-container-box .my-personalize-box .my-personalize-products-list .my-personalize-products-item .item .item-progress p {

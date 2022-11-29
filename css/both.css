@@ -1329,7 +1329,7 @@ footer .copyright-box .copyright-item ul li a {
   min-width: 100px;
   min-height: 300px;
   z-index: 10;
-  max-width: 375px;
+  max-width: 400px;
   -webkit-transition: 1s all;
   transition: 1s all;
 }
