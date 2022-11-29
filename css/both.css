@@ -260,6 +260,117 @@ body.gray-bg {
   display: block;
 }
 
+.accordion .card {
+  border: none;
+  background: transparent;
+  margin-top: 16px;
+}
+
+.accordion .card-header {
+  padding: 0;
+  background: transparent;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.accordion .card-header .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+  .accordion .card-header .btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.accordion .card-header .btn p {
+  display: none;
+  font-size: 24px;
+}
+
+.accordion .card-header .btn.collapsed {
+  border-bottom: 1px #BEBEBE solid;
+  padding-bottom: 22px;
+}
+
+.accordion .card-header .btn.collapsed img.acc-b {
+  display: none;
+}
+
+.accordion .card-header .btn.collapsed img.acc-s {
+  display: block;
+}
+
+.accordion .card-header .btn.collapsed p {
+  display: block;
+  color: #B4B4B4;
+  margin-left: 16px;
+}
+
+.accordion .card-header .btn:hover p {
+  text-decoration: none !important;
+}
+
+.accordion .card-header img.acc-b {
+  width: 83px;
+}
+
+@media screen and (max-width: 576px) {
+  .accordion .card-header img.acc-b {
+    width: 70px;
+  }
+}
+
+.accordion .card-header img.acc-s {
+  width: 43px;
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .accordion .card-header img.acc-s {
+    width: 32px;
+  }
+}
+
+.accordion .card-header .btn-link:hover {
+  text-decoration: none !important;
+}
+
+.accordion .card-body {
+  padding: 16px 12px;
+}
+
+.accordion .card-body .title-box {
+  font-weight: 500;
+  font-size: 30px;
+  margin: 6px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .accordion .card-body .title-box {
+    text-align: center;
+  }
+}
+
+.accordion .card-body p {
+  font-size: 16px;
+}
+
+.accordion .collapse {
+  border-bottom: 1px #BEBEBE solid;
+}
+
 small.small-title {
   font-size: 20px;
   font-weight: 500;
@@ -873,8 +984,8 @@ footer .footer-menu-box ul {
   margin-top: 12px;
 }
 
-footer .footer-menu-box ul li {
-  line-height: 2;
+footer .footer-menu-box ul li + li {
+  margin-top: 13px;
 }
 
 footer .footer-menu-box ul li:before, footer .footer-menu-box ul li:after {
@@ -914,8 +1025,8 @@ footer .footer-menu {
   }
 }
 
-footer .footer-menu .menu-item {
-  margin-right: 36px;
+footer .footer-menu .menu-item + .menu-item {
+  margin-left: 70px;
 }
 
 footer .footer-menu .menu-item.disabled {

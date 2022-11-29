@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAL 購物須知 - 0.3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="css/both.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+    <!-- banner -->
+    <div class="products-banner">
+        <div class="products-title">購物須知</div>
+        <img src="img/product/banner-01.jpeg" alt="">
+    </div>
+
+    <!-- mobile menu -->
+    <div class="product-mobile-menu d-block d-lg-none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobile-menu-list">
+                        <a href="javascript:;">
+                            全部產品
+                            <img src="img/icon-arrow.png" alt="">
+                        </a>
+                        <a href="javascript:;">
+                            護理程序
+                            <img src="img/icon-arrow.png" alt="">
+                        </a>
+                        <a href="javascript:;">
+                            肌膚問題
+                            <img src="img/icon-arrow.png" alt="">
+                        </a>
+                        <a href="javascript:;">
+                            活性成分
+                            <img src="img/icon-arrow.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-list-box">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- desktop menu -->
+                <div class="d-none d-lg-block col-lg-2 offset-lg-1">
+                    <div class="products-menu">
+                        <div class="products-menu-item">
+                            <a class="menu-title" href="javascript:;">付款方式</a>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;">信用卡付款</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">超商取貨付款</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="products-menu-item">
+                            <a class="menu-title" href="javascript:;">出貨與配送說明</a>
+                        </div>
+                        <div class="products-menu-item">
+                            <a class="menu-title" href="javascript:;">發票說明</a>
+                        </div>
+                        <div class="products-menu-item">
+                            <a class="menu-title" href="javascript:;">退貨流程</a>
+                        </div>
+                        <div class="products-menu-item">
+                            <a class="menu-title" href="javascript:;">訂單相關</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="shopping-guide-box">
+                                <div class="accordion" id="shopping-guide">
+                                    <!-- 付款方式 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <img src="img/arrow-right.svg" alt=""> 付款方式
+                                            </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#shopping-guide">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>
+                                                        <p class="sub-title">信用卡付款</p>
+                                                        <p>在 PERS. ACTIVE LAB 官網提交訂單後，網頁將會轉往藍新金流Newebpay第三方支付金流平台；交易全程採用 SSL 256bit 加密機制，且信用卡資料將不會儲存於網站，您可以安心地使用信用卡付款！ </p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="sub-title">超商取貨付款</p>
+                                                        <p>商品將寄至您所選擇全家、7-Eleven門市，產品到達時會以簡訊通知您取件，屆時於門市現金付款即可。</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 出貨與配送說明 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                <img src="img/arrow-right.svg" alt=""> 出貨與配送說明
+                                            </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#shopping-guide">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>
+                                                        <p>台灣本島訂單常態出貨時間為1~3天工作日出貨（以訂單確認日期計算）。</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>實際出貨時間仍依訂單量調節，可能提前或延後出貨。如遇天災 / 例假日 / 訂單資訊有誤 / 熱銷產品（如遇到大量預購），可能會造成延後到貨。</p>
+                                                    </li>
+                                                </ul>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">配送方式</th>
+                                                            <th scope="col">到貨時間</th>
+                                                            <th scope="col">運費</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                宅配<br>宅配範圍目前限於台灣本島地區，外島地區請選擇超商取貨方式。
+                                                            </td>
+                                                            <td>
+                                                                約通知出貨後約2-3天到貨（偏遠地區將於3-7日內送達），到貨後宅配人員會電話通知取貨。<br>
+                                                                以『新竹物流』宅配方式寄出。
+                                                            </td>
+                                                            <td>需支付80元運費</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>全家、外島地區超商 / 特殊超商門市</td>
+                                                            <td>
+                                                                約通知出貨後3-5天到貨，到貨後會簡訊、email通知取貨，需5日內取貨，如逾時會退回。<br>
+                                                                ※請留意連續假期前後，避開選擇學校或科學園區商業大樓附近的門市，以免影響您取貨權益與折扣優惠。<br>
+                                                                ※外島地區送達時間會因天氣狀況、船隻班次而有變動的可能性。<br>
+                                                                ※因超商取貨付款有材積限制，若有超出材積的情況，客服人員將另行通知您。
+                                                            </td>
+                                                            <td>需支付80元運費</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="3">
+                                                                注意事項<br>超商取貨：取貨付款 / 純取貨(訂單姓名需填寫證件姓名，以維護您取貨權益)。
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 發票說明 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                <img src="img/arrow-right.svg" alt=""> 發票說明
+                                            </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#shopping-guide">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>
+                                                        <p>根據財政部令「電子發票實施作業要點」，在 PERS. ACTIVE LAB 官網消費後開立之「二聯電子發票」不另行寄送紙本發票，以電子發票取代。</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 退貨流程 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                <img src="img/arrow-right.svg" alt=""> 退貨流程
+                                            </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#shopping-guide">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>
+                                                        <p>會員購買產品有七天猶豫期（猶豫期非試用期），如欲辦理退換貨，請在取得該產品當日起算七日內（含例假日）提出申請，逾期無法申請，且不接受部分退貨。產品請保持完整(含主產品、贈品與包裝)，若有缺件、毀損等個人因素，PERS. Active Lab將保留接受退貨與否之權力。</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>申請步驟：登入個人會員帳戶，前往「會員中心」 →「訂單紀錄」 ，找到欲退貨之訂單點選“申請退貨”，PERS. ACTIVE LAB 會以e-mail通知【全家退貨寄件代碼】，請前往鄰近全家門市寄件，運費PERS. ACTIVE LAB承擔。</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>每張訂單僅提供乙次免費退貨服務，收到退貨確認產品完整及退款資料無誤後，將在1~7個工作天內完成退款作業。</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 訂單相關 -->
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                <img src="img/arrow-right.svg" alt=""> 訂單相關
+                                            </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#shopping-guide">
+                                            <div class="card-body">
+                                                <ul>
+                                                    <li>
+                                                        <p>PERS. ACTIVE LAB 保留訂單接受與否之權利，若因意外等狀況導致無法接受您的訂單，將使用電話、MAIL與您聯繫，以便進行訂單處理或辦理退款，如造成您的不便，敬請見諒。</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>如訂單因 PERS. ACTIVE LAB 主觀因素無法出貨，將直接取消不另行通知。</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>欲知訂單進度：請先登入個人會員帳戶，前往「會員中心」 →「訂單紀錄」 ，訂單處理進度將在此頁同步更新狀態。</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="js/header.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
