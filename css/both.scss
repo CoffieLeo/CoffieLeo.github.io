@@ -1009,6 +1009,8 @@ footer{
     .cart-custom{
         padding-top: 15px;
         border-top: 1px #E0E0E0 solid;
+        max-height: 400px;
+        overflow-y: scroll;
         @media screen and (max-width: 890px){
             // max-height: 300px;
             height: 300px;

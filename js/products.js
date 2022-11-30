@@ -8,3 +8,12 @@ if (favoriteBtn) {
         });
     }
 }
+
+// shopping cart
+function openCart() {
+    document.querySelector('.shopping-cart-box').classList.add('active')
+}
+  
+function closeCart() {
+    document.querySelector('.shopping-cart-box').classList.remove('active')
+}

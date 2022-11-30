@@ -165,7 +165,7 @@
                                         <img src="img/favorite-white.svg" alt="">
                                         <img src="img/favorite-red.svg" alt="">
                                     </button>
-                                    <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
+                                    <button class="black-btn" onclick="openCart()">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +191,7 @@
                                         <img src="img/favorite-white.svg" alt="">
                                         <img src="img/favorite-red.svg" alt="">
                                     </button>
-                                    <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
+                                    <button class="black-btn" onclick="openCart()">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                                         <img src="img/favorite-white.svg" alt="">
                                         <img src="img/favorite-red.svg" alt="">
                                     </button>
-                                    <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
+                                    <button class="black-btn" onclick="openCart()">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +243,7 @@
                                         <img src="img/favorite-white.svg" alt="">
                                         <img src="img/favorite-red.svg" alt="">
                                     </button>
-                                    <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
+                                    <button class="black-btn" onclick="openCart()">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +269,7 @@
                                         <img src="img/favorite-white.svg" alt="">
                                         <img src="img/favorite-red.svg" alt="">
                                     </button>
-                                    <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
+                                    <button class="black-btn" onclick="openCart()">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -278,6 +278,124 @@
             </div>
         </div>
     </div>
+
+        <!-- add active to show -->
+        <div class="shopping-cart-box fixed-model">
+            <button class="close-btn" onclick="closeCart()">
+                <img src="img/close-btn.svg" alt="">
+            </button>
+            <div class="cart-box">
+                <div class="cart-top">
+                    <div class="cart-item">
+                        <img src="img/cart/cart-img-default-0.png" alt="">
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-title">
+                            <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                        </div>
+                        <div class="cart-price">NT$2160</div>
+                        <div class="cart-sale">
+                            <div class="cart-old-price">NT$2700</div>
+                            <div class="cart-sale-num">20%OFF</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-bottom">
+                    <div class="num-item num-ctrl">
+                        <img src="img/cart/cart-num-01.png" alt="">
+                    </div>
+                    <div class="num-item total-count">
+                        <input id="total-count" type="text" value="1">
+                    </div>
+                    <div class="num-item num-ctrl">
+                        <img src="img/cart/cart-num-02.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="cart-box cart-custom">
+                <div class="custom-item">
+                    <div class="custom-p">
+                        <p class="main-p">自訂個人化護理程序，全方位決肌膚問題</p>
+                        <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
+                    </div>
+                    <div class="cart-top">
+                        <div class="cart-item">
+                            <img src="img/cart/cart-img-default-1.png" alt="">
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-title">
+                                <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </div>
+                            <div class="cart-price">NT$2160</div>
+                            <div class="cart-sale">
+                                <div class="cart-old-price">NT$2700</div>
+                                <div class="cart-sale-num">20%OFF</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="num-item num-ctrl">
+                            <img src="img/cart/cart-num-01.png" alt="">
+                        </div>
+                        <div class="num-item">
+                            <input type="text" value="1">
+                        </div>
+                        <div class="num-item num-ctrl">
+                            <img src="img/cart/cart-num-02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="cart-info">
+                        <img src="img/cart/cart-info.svg" alt="">
+                        此商品數量不得超過20ml主商品數量
+                    </div>
+                </div>
+                <div class="custom-item">
+                    <div class="custom-p">
+                        <p class="sub-p">加入保濕程序，打好肌膚健康、透亮好基礎</p>
+                    </div>
+                    <div class="cart-top">
+                        <div class="cart-item">
+                            <img src="img/cart/cart-img-default-2.png" alt="">
+                        </div>
+                        <div class="cart-item">
+                            <div class="cart-title">
+                                <div class="cart-title-text">維他命A胜肽極效青春精華 A18 20ml</div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                </div>
+                            </div>
+                            <div class="cart-price">NT$2160</div>
+                            <div class="cart-sale">
+                                <div class="cart-old-price">NT$2700</div>
+                                <div class="cart-sale-num">20%OFF</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="num-item num-ctrl">
+                            <img src="img/cart/cart-num-01.png" alt="">
+                        </div>
+                        <div class="num-item">
+                            <input type="text" value="1">
+                        </div>
+                        <div class="num-item num-ctrl">
+                            <img src="img/cart/cart-num-02.png" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="cart-info">
+                        <img src="img/cart/cart-info.svg" alt="">
+                        此商品數量不得超過20ml主商品數量
+                    </div> -->
+                </div>
+            </div>
+            <div class="cart-footer">
+                <button class="white-btn">立即購買</button>
+                <button class="black-btn">加入購物車<img src="img/icon-arrow-right-w.png" alt=""></button>
+            </div>
+        </div>
     
 
     <!-- bootstrap -->

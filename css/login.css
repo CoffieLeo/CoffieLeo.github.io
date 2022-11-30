@@ -161,6 +161,7 @@
   font-size: 13px;
   opacity: 0.5;
   padding-bottom: 30px;
+  text-align: left;
 }
 
 .login-container-box .login-box p.opacity a {
