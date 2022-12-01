@@ -363,6 +363,7 @@
   font-weight: 500;
   color: #7C7C7C;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .product-detail-swiper-box .product-detail-info .detail-info-bottom .item.favorite-btn.like img:first-child {

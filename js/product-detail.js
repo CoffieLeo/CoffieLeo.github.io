@@ -21,3 +21,15 @@ var swiper = new Swiper(".featured-swiper", {
     freeMode: true,
     watchSlidesProgress: true,
 });
+
+// favorite-btn
+// favorite-btn
+let favoriteBtn = document.querySelectorAll('.favorite-btn');
+if (favoriteBtn) {
+    for (let i = 0; i < favoriteBtn.length; i += 1) {
+        const elem = favoriteBtn[i];
+        elem.addEventListener('click', () => {
+            elem.classList.toggle("like");
+        });
+    }
+}

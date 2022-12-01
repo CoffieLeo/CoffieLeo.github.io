@@ -297,6 +297,11 @@ ul.member-menu-box li img.arrow {
   }
 }
 
+.navigation .swiper {
+  width: 100%;
+  height: 100%;
+}
+
 .navigation .logo {
   width: 100%;
   display: -webkit-box;
@@ -2018,6 +2023,10 @@ ul.navigation-ul li .sub-nav a.active {
 
 .cart-custom {
   border-top: none !important;
+}
+
+.cart-custom ul {
+  padding: 0 30px;
 }
 
 .cart-box {

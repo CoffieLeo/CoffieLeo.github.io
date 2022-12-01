@@ -1077,6 +1077,11 @@
   font-weight: 600;
 }
 
+.cart-custom {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
 .cart-top {
   -webkit-box-pack: center;
       -ms-flex-pack: center;

@@ -246,6 +246,10 @@ ul{
     @media screen and (max-width: 576px) {
         display: none;
     }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
     .logo{
         width: 100%;
         display: flex;
@@ -1644,6 +1648,9 @@ ul{
 }
 .cart-custom{
     border-top: none !important;
+    ul{
+        padding: 0 30px;
+    }
 }
 
 .cart-box{
