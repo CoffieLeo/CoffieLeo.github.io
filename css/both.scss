@@ -54,6 +54,52 @@ body{
     line-height: 1;
 }
 
+.store-phone-box{
+    width: 100%;
+    max-width: 290px;
+    padding: 20px;
+    background-color: #592A80;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    &.for-mobile{
+        display: none;
+        @media screen and (max-width: 767px) {
+            position: static;
+            max-width: 100%;
+            text-align: center;
+            display: block;
+            padding-top: 39px;
+            padding-bottom: 41px;
+        }
+    }
+    .store-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            max-width: 210px;
+            margin: 12px auto 0;
+        }
+    }
+    img{
+        width: 120px;
+        margin: 3px 0;
+    }
+    .qrcode{
+        width: 80px;
+        margin-right: 12px;
+    }
+}
+
 .more-btn{
     a{
         display: inline-flex;

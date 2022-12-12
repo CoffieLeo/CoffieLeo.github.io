@@ -383,3 +383,145 @@ body{
         }
     }
 }
+
+.about-skin-care{
+    width: 100%;
+    max-width: 1555px;
+    margin: 170px auto 0;
+    @media screen and (max-width: 576px) {
+        margin-top: 0;
+    }
+    .container-fluid{
+        @media screen and (max-width: 576px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .img-box{
+        width: 100%;
+        max-width: 666px;
+        @media screen and (max-width: 576px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    ul{
+        margin-top: 50px;
+        @media screen and (max-width: 576px) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+        li{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.8;
+        }
+    }
+}
+
+.skin-ai-box{
+    margin-top: 170px;
+    padding: 100px 30px;
+    background-color: #FBFBFB;
+    position: relative;
+    @media screen and (max-width: 576px) {
+        margin-top: 60px;
+        padding: 60px 30px;
+    }
+    .skin-ai-text{
+        .sub-text{
+            font-size: 20px;
+            font-weight: 500;
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+        .main-text{
+            font-size: 60px;
+            font-weight: 700;
+            @media screen and (max-width: 576px) {
+                font-size: 38px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+    .store-phone-box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: unset;
+    }
+}
+
+.skin-swiper-box{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    .skin-ai-title{
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.15);
+        margin-top: 80px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .skin-ai-swiper{
+        margin-top: 50px;
+    }
+}
+
+.skin-ai-swiper-title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.skin-ai-swiper-info{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.all-skin-box{
+    padding-bottom: 150px;
+    .all-skin-title{
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0,0,0,.5);
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.p-static{
+    position: static;
+    top: unset;
+    left: unset;
+    bottom: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+
+}
