@@ -712,4 +712,242 @@ body {
   width: 100%;
   max-width: 100%;
 }
+
+.about-us-labs-box {
+  margin-top: 50px;
+}
+
+.about-us-labs-box .about-us-labs-sub-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-us-labs-box .about-us-labs-title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-labs-box .about-us-labs-title {
+    font-size: 35px;
+  }
+}
+
+.about-us-labs-box .about-us-labs-desc {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.about-us-labs-info-box {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-labs-info-box .about-us-labs-info-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-labs-info-box .about-us-labs-info-title {
+    margin-top: 60px;
+  }
+}
+
+.about-us-labs-info-box .about-us-labs-list {
+  margin-top: 50px;
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-labs-info-box .about-us-labs-list .labs-item {
+    margin-bottom: 20px;
+  }
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .img-box img {
+  width: 100%;
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box .info-sub-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box .info-title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-labs-info-box .about-us-labs-list .labs-item .info-box .info-title {
+    font-size: 22px;
+  }
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box .info-desc {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-labs-info-box .about-us-labs-list .labs-item .info-box .info-desc {
+    font-size: 14px;
+  }
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box .more-btn {
+  margin-top: 10px;
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box .more-btn a {
+  border: none;
+}
+
+.about-us-labs-info-box .info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-us-labs-info-box .info-title img {
+  margin-right: 10px;
+}
+
+.about-us-labs-info-box p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-us-labs-info-box p.bold {
+  font-weight: bold;
+}
+
+.about-us-labs-info-box .not-use-box {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.about-us-labs-info-box .not-use-box .not-use-title {
+  display: inline-block;
+  background-color: #1E1E1E;
+  padding: 8px 16px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.about-us-labs-info-box .not-use-box .not-use-sub-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.about-us-labs-info-box .not-use-box .not-use-list-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about-us-labs-info-box .not-use-box .not-use-list-box .not-use-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 89px;
+  height: 89px;
+  border-radius: 100%;
+  border: 2px solid #C4C4C4;
+  position: relative;
+  margin: 0 25px 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-us-labs-info-box .not-use-box .not-use-list-box .not-use-item.long-item {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 576px) {
+  .about-us-labs-info-box .not-use-box .not-use-list-box .not-use-item {
+    margin: 0 15px 15px;
+  }
+}
+
+.about-us-labs-info-box .not-use-box .not-use-list-box .not-use-item::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #C4C4C4;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.about-us-labs-info-box .not-use-box small {
+  font-style: 12px;
+  color: rgba(30, 30, 30, 0.5);
+}
+
+.about-us-labs-info-box .not-use-box small a {
+  color: rgba(30, 30, 30, 0.5);
+}
 /*# sourceMappingURL=about-us.css.map */
