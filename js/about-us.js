@@ -1,6 +1,10 @@
 var swiper = new Swiper(".skin-ai-swiper", {
     slidesPerView: 3,
     spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
     breakpoints: {
         390: {
             slidesPerView: 1,

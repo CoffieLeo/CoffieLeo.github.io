@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@200;600;800&display=swap");
+body {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+}
+
+.new-member-step-box {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.new-member-step-box .step-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid rgba(30, 30, 30, 0.15);
+  margin-top: 50px;
+  padding-bottom: 60px;
+}
+
+.new-member-step-box .step-box.step-1 .step-info ul {
+  margin-top: 1rem;
+}
+
+.new-member-step-box .step-box.step-1 .step-info ul li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.new-member-step-box .step-box.step-2 .step-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-member-step-box .step-box.step-2 .step-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .5;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.new-member-step-box .step-box.step-2 .step-info ul li.is-choose {
+  opacity: 1;
+}
+
+.new-member-step-box .step-box.step-2 .step-info ul li img {
+  width: 90px;
+  margin-bottom: 16px;
+}
+
+.new-member-step-box .step-box.step-3 .step-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.new-member-step-box .step-box.step-3 .step-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .5;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.new-member-step-box .step-box.step-3 .step-info ul li.is-choose {
+  opacity: 1;
+}
+
+.new-member-step-box .step-box.step-3 .step-info ul li img {
+  width: 90px;
+  margin-bottom: 16px;
+}
+
+.new-member-step-box .step-box .step-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.new-member-step-box .step-box .step-item + .step-item {
+  margin-left: 10px;
+}
+
+.new-member-step-box .step-box .step-item.step-num {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.new-member-step-box .step-box .step-item .step-title {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.new-member-step-box .step-box .step-item .step-info {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.new-member-step-box .step-box .step-item .step-info p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.new-member-step-box .step-box .step-item .step-info p span {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=new-member.css.map */

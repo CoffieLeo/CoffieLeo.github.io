@@ -93,29 +93,33 @@ body {
   }
 }
 
-.about-us-box ul {
-  margin-top: 40px;
-}
-
-@media screen and (max-width: 576px) {
-  .about-us-box ul {
-    padding: 0 16px;
-  }
-}
-
-.about-us-box ul li {
+.about-us-box .about-info-list .info-list-item {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 10px;
+  padding: 8px 16px 0;
 }
 
-@media screen and (max-width: 576px) {
-  .about-us-box ul li {
-    font-size: 18px;
-  }
+.about-us-box .about-info-list .info-list-item:before, .about-us-box .about-info-list .info-list-item:after {
+  display: table;
+  content: "";
+  line-height: 0;
 }
 
-.about-us-box ul li + li {
-  margin-top: 20px;
+.about-us-box .about-info-list .info-list-item:after {
+  clear: both;
+}
+
+.about-us-box .about-info-list .info-list-item .list-icon {
+  width: 20px;
+  float: left;
+  padding-right: 10px;
+}
+
+.about-us-box .about-info-list .info-list-item .list-content {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
 }
 
 .about-slogan-box {
@@ -552,6 +556,7 @@ body {
   .about-skin-care .img-box {
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 20px;
   }
 }
 
@@ -570,6 +575,8 @@ body {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.8;
+  text-align: justify;
+  letter-spacing: 0.05em;
 }
 
 .skin-ai-box {
@@ -582,7 +589,7 @@ body {
 @media screen and (max-width: 576px) {
   .skin-ai-box {
     margin-top: 60px;
-    padding: 60px 30px;
+    padding: 60px 0px;
   }
 }
 
@@ -597,15 +604,22 @@ body {
   }
 }
 
-.skin-ai-box .skin-ai-text .main-text {
+.skin-ai-box .skin-ai-text .main-text p {
   font-size: 60px;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 576px) {
-  .skin-ai-box .skin-ai-text .main-text {
+  .skin-ai-box .skin-ai-text .main-text p {
     font-size: 38px;
     letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .skin-ai-box .skin-ai-text .main-text p span {
+    display: block;
   }
 }
 
@@ -689,6 +703,18 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.swiper-wrapper {
+  padding-bottom: 30px;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1E1E1E !important;
 }
 
 .p-static {
@@ -812,6 +838,7 @@ body {
   font-size: 30px;
   font-weight: 600;
   line-height: 1.2;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 576px) {

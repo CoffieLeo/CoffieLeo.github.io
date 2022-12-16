@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@200;600;800&display=swap');
+
+body{
+    font-family: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+}
+
+.new-member-step-box{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    .step-box{
+        display: flex;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.15);
+        margin-top: 50px;
+        padding-bottom: 60px;
+        &.step-1{
+            .step-info{
+                ul{
+                    margin-top: 1rem;
+                    li{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 1.6;
+                    }
+                }
+            }
+        }
+        &.step-2{
+            .step-info{
+                ul{
+                    display: flex;
+                    margin-top: 1rem;
+                    width: 100%;
+                    justify-content: space-between;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        font-size: 14px;
+                        font-weight: 500;
+                        opacity: .5;
+                        transition: .5s;
+                        cursor: pointer;
+                        &.is-choose{
+                            opacity: 1;
+                        }
+                        img{
+                            width: 90px;
+                            margin-bottom: 16px;
+                        }
+
+                    }
+                }
+            }
+        }
+        &.step-3{
+            .step-info{
+                ul{
+                    display: flex;
+                    margin-top: 1rem;
+                    width: 100%;
+                    justify-content: space-between;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        font-size: 14px;
+                        font-weight: 500;
+                        opacity: .5;
+                        transition: .5s;
+                        cursor: pointer;
+                        &.is-choose{
+                            opacity: 1;
+                        }
+                        img{
+                            width: 90px;
+                            margin-bottom: 16px;
+                        }
+
+                    }
+                }
+            }
+        }
+        .step-item{
+            flex: 1;
+            +.step-item{
+                margin-left: 10px;
+            }
+            &.step-num{
+                font-size: 60px;
+                font-weight: 700;
+                line-height: 1;
+                flex: none;
+            }
+            .step-title{
+                font-size: 24px;
+                font-weight: 600;
+                padding-top: 20px;
+            }
+            .step-info{
+                width: 100%;
+                margin-top: 10px;
+                p{
+                    font-size: 18px;
+                    font-weight: 600;
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
