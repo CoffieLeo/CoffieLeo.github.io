@@ -40,6 +40,19 @@ body{
     }
 }
 
+select{
+    &.form-control{
+        appearance: none;
+        outline: none;
+        box-shadow: none;
+        border-color: transparent;
+        background-color: #F8F9F9;
+        @media screen and (max-width: 576px) {
+            appearance: button; 
+        }
+    }
+}
+
 .custom-control-input:checked~.custom-control-label::before{
     border-color: #1E1E1E;
     background-color: #1E1E1E;
@@ -98,6 +111,15 @@ body{
         width: 80px;
         margin-right: 12px;
     }
+}
+
+// news
+.news{
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 16px;
 }
 
 .more-btn{
@@ -396,6 +418,7 @@ header{
     background-color: white;
     z-index: 250;
     transition: top .5s;
+    box-sizing: border-box;
     &.nav-up {
         top: -100%;
     }

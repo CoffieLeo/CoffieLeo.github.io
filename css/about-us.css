@@ -56,7 +56,7 @@ body {
 .about-us-box {
   width: 100%;
   max-width: 1370px;
-  margin: 50px auto 0;
+  margin: 170px auto 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -740,7 +740,7 @@ body {
 }
 
 .about-us-labs-box {
-  margin-top: 50px;
+  margin-top: 170px;
 }
 
 .about-us-labs-box .about-us-labs-sub-title {
@@ -864,6 +864,11 @@ body {
 
 .about-us-labs-info-box .about-us-labs-list .labs-item .info-box .more-btn a {
   border: none;
+  background-color: white;
+}
+
+.about-us-labs-info-box .about-us-labs-list .labs-item .info-box .more-btn a:hover {
+  background-color: black;
 }
 
 .about-us-labs-info-box .info-title {

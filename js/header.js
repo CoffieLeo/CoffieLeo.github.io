@@ -73,3 +73,11 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+$(window).on('resize', function() {
+    $('body').css('padding-top', $('header').outerHeight());
+});
+
+$(document).ready(function() {
+    $('body').css('padding-top', $('header').outerHeight());
+});

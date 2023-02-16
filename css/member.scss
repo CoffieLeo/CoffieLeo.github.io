@@ -1,20 +1,5 @@
 body{
     min-height: 100vh;
-    &.not-detected{
-        .my-skin-box{
-            .skin-list{
-                &:nth-child(1), &:nth-child(3){
-                    filter: grayscale(1);
-                }
-            }
-        }
-        .total-score-step{
-            filter: grayscale(1);
-        }
-        .my-skin-detail-info, .my-personalize-info{
-            display: none;
-        }
-    }
 }
 
 // member-header-box
@@ -26,6 +11,12 @@ body{
     padding-right: 70px;
     @media screen and (max-width: 576px) {
         display: none;
+    }
+}
+
+select{
+    &.form-control{
+        height: 52px;
     }
 }
 
@@ -527,6 +518,21 @@ ul{
         display: flex;
         @media screen and (max-width: 576px) {
             flex-direction: column;
+        }
+        &.not-detected{
+            .my-skin-box{
+                .skin-list{
+                    &:nth-child(1), &:nth-child(3){
+                        filter: grayscale(1);
+                    }
+                }
+            }
+            .total-score-step{
+                filter: grayscale(1);
+            }
+            .my-skin-detail-info, .my-personalize-info{
+                display: none;
+            }
         }
         .my-skin-info{
             width: 420px;

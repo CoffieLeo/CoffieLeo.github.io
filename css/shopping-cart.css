@@ -232,24 +232,6 @@
   }
 }
 
-.shopping-form-check-box .form-check-top-box select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-color: transparent;
-}
-
-@media screen and (max-width: 576px) {
-  .shopping-form-check-box .form-check-top-box select {
-    -webkit-appearance: button;
-       -moz-appearance: button;
-            appearance: button;
-  }
-}
-
 .shopping-form-box {
   max-width: 680px;
   margin: 50px auto 0;

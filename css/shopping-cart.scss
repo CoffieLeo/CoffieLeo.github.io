@@ -168,15 +168,6 @@
                 }
             }
         }
-        select{
-            appearance: none;
-            outline: none;
-            box-shadow: none;
-            border-color: transparent;
-            @media screen and (max-width: 576px) {
-                appearance: button; 
-            }
-        }
     }
 }
 
